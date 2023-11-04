@@ -10,27 +10,27 @@
       <h1 class="text-4xl font-bold tracking-tight text-slate-200">Muhamad Matin Anugrah Pujayanto</h1>
       <h2 class="mt-4 leading-normal text-slate-400 font-inter">
         Students with aspirations of becoming
-        <span class="text-white hover:text-teal-300 duration-200">full stack developers</span>
+        <span class="text-slate-300 hover:text-teal-300 duration-200">full stack developers</span>
       </h2>
       <section id="about" class="my-24 text-slate-400">
         <h1 class="mb-4 text-2xl md:text-3xl font-semibold text-white">About Me</h1>
         <div>
           <p class="mb-4 text-lg">
             I am a student who dreams of becoming a
-            <span class="text-white hover:text-teal-300 duration-200">full stack developer</span>, namely someone who can develop a website from start to finish by mastering the various technologies and tools needed
+            <span class="text-slate-300 hover:text-teal-300 duration-200">full stack developer</span>, namely someone who can develop a website from start to finish by mastering the various technologies and tools needed
           </p>
           <p class="mb-4">
             In in
-            <span class="text-white hover:text-teal-300 duration-200">2021</span>
+            <span class="text-slate-300 hover:text-teal-300 duration-200">2021</span>
             I decided to continue my studies at a
-            <span class="text-white hover:text-teal-300 duration-200">vocational school</span>. I would like to take advantage of this opportunity to
-            <span class="text-white hover:text-teal-300 duration-200">improve my knowledge and skills</span>
+            <span class="text-slate-300 hover:text-teal-300 duration-200">vocational school</span>. I would like to take advantage of this opportunity to
+            <span class="text-slate-300 hover:text-teal-300 duration-200">improve my knowledge and skills</span>
           </p>
           <p class="mb-4">
             My main focus is
-            <span class="text-white hover:text-teal-300 duration-200">learning various programming languages</span>
-            ​​used in the computer world. I want to know how each programming language works, the advantages and disadvantages I also want to develop my
-            <span class="text-white hover:text-teal-300 duration-200">ability to solve problems, think logically, and collaborate with other people.</span>
+            <span class="text-slate-300 hover:text-teal-300 duration-200">learning various programming languages</span>
+            used in the computer world. I want to know how each programming language works, the advantages and disadvantages I also want to develop my
+            <span class="text-slate-300 hover:text-teal-300 duration-200">ability to solve problems, think logically, and collaborate with other people.</span>
           </p>
         </div>
       </section>
