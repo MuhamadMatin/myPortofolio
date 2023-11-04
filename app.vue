@@ -1,6 +1,8 @@
 <template>
   <div>
     <Head>
+      <!-- ini merupakan cara menambahkan head pada Nuxt -->
+      <Html lang="en" />
       <Title>{{ title }}</Title>
       <Meta name="description" :content="title" />
     </Head>
@@ -56,7 +58,7 @@
               {{ exp.desk }}
             </p>
             <div class="mt-2 flex space-x-2">
-              <img v-for="svg in exp.svg" :key="svg" class="w-6 h-6" :src="`/svg/${svg}`" alt="svg image" />
+              <img v-for="svg in exp.svg" :key="svg" class="w-6 h-6" :src="`/svg/${svg}`" loading="lazy" alt="svg image" />
             </div>
           </div>
         </div>
