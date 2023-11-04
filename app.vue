@@ -93,5 +93,4 @@
       svg: ['html.svg', 'css.svg', 'js.svg'],
     },
   ];
-  console.log(experience);
 </script>
