@@ -65,8 +65,8 @@
       </section>
       <!-- addition -->
       <div class="mt-0 text-xs text-slate-400">
-        This website was created using the <span class="text-slate-200 duration-200 hover:text-teal-400">Nuxt</span> framework and created using <span class="text-slate-200 duration-200hover:text-cyan-400"> Tailwind</span>. Published using
-        <span class="text-slate-200 duration-200 hover:bg-gradient-to-r hover:from-cyan-300 from-60% hover:to-white to-30% bg-clip-text hover:text-transparent">Netlify</span>
+        This website was created using the <span class="text-slate-200 duration-200 hover:text-teal-400">Nuxt</span> framework and created using <span class="text-slate-200 duration-200 hover:text-cyan-400"> Tailwind</span>. Published using
+        <span class="text-slate-200 duration-200 hover:bg-gradient-to-r hover:from-cyan-300 hover:to-white bg-clip-text hover:text-transparent">Netlify</span>
       </div>
     </div>
   </div>
