@@ -49,7 +49,7 @@
       <section id="project" class="mt-24 text-slate-400">
         <h1 class="mb-4 text-2xl md:text-3xl font-semibold text-white">Projects</h1>
         <div class="mb-12" v-for="exp in experience" :key="exp">
-          <img class="h-full w-full rounded-md" :src="`/images/${exp.image}`" alt="image in experience" />
+          <img class="rounded-md" :src="`/images/${exp.image}`" alt="image in experience" />
           <div>
             <p class="mt-1 mb-2 w-fit md:text-lg text-slate-200 font-semibold hover:text-teal-300 duration-200">
               {{ exp.name }}
