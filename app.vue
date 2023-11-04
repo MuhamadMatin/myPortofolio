@@ -1,5 +1,9 @@
 <template>
   <div>
+    <Head>
+      <Title>{{ title }}</Title>
+      <Meta name="description" :content="title" />
+    </Head>
     <div class="px-5 py-10 mx-auto md:max-w-md lg:max-w-xl">
       <h1 class="text-4xl font-bold tracking-tight text-slate-200">Muhamad Matin Anugrah Pujayanto</h1>
       <h2 class="mt-4 leading-normal text-slate-400 font-inter">
@@ -67,6 +71,7 @@
 </template>
 
 <script setup>
+  const title = ref('My Portofolio');
   const experience = [
     {
       name: 'Nuxt blog',
