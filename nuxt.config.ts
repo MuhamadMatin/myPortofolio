@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css:["assets/css/style.css"],
+  css: ['assets/css/style.css'],
   app: {
     head: {
       htmlAttrs: {
@@ -9,9 +9,9 @@ export default defineNuxtConfig({
       },
       title: 'My Portofolio',
       charset: 'utf-8',
-      meta: [],
+      meta: [{ content: 'This my first portofolio' }],
       link: [],
-    }
+    },
   },
 
   modules: ['@nuxtjs/tailwindcss'],
