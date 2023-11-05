@@ -11,16 +11,16 @@
 <script setup>
   const achievements = [
     {
-      header: 'July 2023 — Dicoding Indonesia',
-      name: 'Memulai Dasar Pemrograman Untuk Menjadi Pengembang Software',
+      header: 'September 2023 — Dicoding Indonesia',
+      name: 'Belajar Dasar Visualisasi Data',
     },
     {
       header: 'August 2023 — Dicoding Indonesia',
       name: 'Pengenalan Ke Logika Pemrograman (Progamming Logic 101)',
     },
     {
-      header: 'September 2023 — Dicoding Indonesia',
-      name: 'Belajar Dasar Visualisasi Data',
+      header: 'July 2023 — Dicoding Indonesia',
+      name: 'Memulai Dasar Pemrograman Untuk Menjadi Pengembang Software',
     },
   ];
 </script>
