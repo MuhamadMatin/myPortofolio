@@ -11,5 +11,4 @@
   const nuxt = 'https://nuxt.com/';
   const tailwindcss = 'https://tailwindcss.com/';
   const netlify = 'https://www.netlify.com/';
-  const title = ref('My Portofolio');
 </script>

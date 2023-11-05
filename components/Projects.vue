@@ -1,6 +1,6 @@
 <template>
   <div class="mb-12" v-for="project in projects" :key="project">
-    <img class="h-full w-full rounded-md" loading="lazy" :src="`/images/${project.image}`" alt="image in experience" />
+    <img class="h-full w-full rounded-md" loading="lazy" :src="`/images/${project.image}`" alt="image project" />
     <div>
       <NuxtLink :to="`${project.URL}`" target="blank" class="group mt-1 mb-2 w-fit md:text-lg text-slate-200 font-semibold hover:text-teal-300 duration-200">
         {{ project.name }}
@@ -32,18 +32,18 @@
       URL: 'https://metallyleopart.github.io/ImageSearch/',
     },
     {
-      name: 'QR Generate',
-      desk: 'I created a website that can generate QR codes from text and URLs using the API from https://goqr.me/api/. I leveraged the documentation available on the website to understand how to send requests and receive responses from the API',
-      image: 'qr.webp',
-      svg: ['html.svg', 'css.svg', 'js.svg'],
-      URL: 'https://metallyleopart.github.io/GenerateQR/',
-    },
-    {
       name: 'Quiz web',
       desk: 'I created a quiz website that can test users knowledge and insight on various topics. I use web technologies such as HTML, CSS, and JavaScript to create interactive and responsive interfaces',
       image: 'quiz.webp',
       svg: ['html.svg', 'css.svg', 'js.svg'],
       URL: 'https://metallyleopart.github.io/Question/',
+    },
+    {
+      name: 'QR Generate',
+      desk: 'I created a website that can generate QR codes from text and URLs using the API from https://goqr.me/api/. I leveraged the documentation available on the website to understand how to send requests and receive responses from the API',
+      image: 'qr.webp',
+      svg: ['html.svg', 'css.svg', 'js.svg'],
+      URL: 'https://metallyleopart.github.io/GenerateQR/',
     },
   ];
 </script>
