@@ -29,9 +29,8 @@
           </p>
           <p class="mb-4">
             My main focus is
-            <span class="text-slate-300 hover:text-teal-300 duration-200">learning various programming languages</span>
-            used in the computer world. I want to know how each programming language works, the advantages and disadvantages I also want to develop my
-            <span class="text-slate-300 hover:text-teal-300 duration-200">ability to solve problems, think logically, and collaborate with other people.</span>
+            <span class="text-slate-300 hover:text-teal-300 duration-200">learning various programming languages</span>. I want to know how each programming language works, the advantages and disadvantages I also want to develop my
+            <span class="text-slate-300 hover:text-teal-300 duration-200">abilities in solving problems, collaborating with other people and so on</span>
           </p>
         </div>
       </section>
