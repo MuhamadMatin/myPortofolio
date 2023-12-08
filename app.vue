@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="bg-[#000103]">
     <Head>
       <!-- ini merupakan cara menambahkan head pada Nuxt -->
       <Html lang="en" />
       <Title>{{ title }}</Title>
       <Meta name="description" :content="title" />
     </Head>
-    <div class="py-10 bg-[#000103] mx-auto text-white md:max-w-md lg:max-w-xl">
+    <div class="py-10 mx-auto text-white md:max-w-md lg:max-w-xl">
       <div class="px-5">
         <h1 class="text-4xl font-bold tracking-tight">Muhamad Matin Anugrah Pujayanto</h1>
         <h2 class="mt-4 leading-normal font-inter">
