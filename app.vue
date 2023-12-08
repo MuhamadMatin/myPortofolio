@@ -39,8 +39,8 @@
           <h1 :class="isSticky?'sticky top-0 inline-block':''" class="mb-2 py-4 w-full backdrop-blur-sm text-2xl md:text-3xl font-semibold text-white">Experience</h1>
           <div>
             <header>2021 — Present</header>
-            <h2 class="mb-4 font-bold ">Student at vocational school</h2>
-            <p class="text-sm md:text-base">
+            <h2 class="mb-4 font-bold">Student at vocational school</h2>
+            <p>
               I am a student at a vocational school whose goal is to learn various programming languages and the understanding needed to become a reliable programmer. I learned about basic concepts, syntax, and logic of programming
               languages such as PHP, Java, JavaScript, and others. I also learned about how to apply these programming languages to create applications, web and other projects. I hope that by studying at this vocational school, I can
               develop my potential and interest in the field of programming.
