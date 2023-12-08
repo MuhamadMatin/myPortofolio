@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-[#000103]">
+  <div class="bg-[#000103] no-scrollbar">
     <Head>
       <!-- ini merupakan cara menambahkan head pada Nuxt -->
       <Html lang="en" />
       <Title>{{ title }}</Title>
       <Meta name="description" :content="title" />
     </Head>
-    <div class="py-10 mx-auto text-white md:max-w-md lg:max-w-xl">
+    <div class="py-10 mx-auto no-scrollbar text-white md:max-w-md lg:max-w-xl">
       <div class="px-5">
         <h1 class="text-4xl font-bold tracking-tight">Muhamad Matin Anugrah Pujayanto</h1>
         <h2 class="mt-4 leading-normal font-inter">
@@ -15,7 +15,7 @@
         </h2>
         <!-- about -->
         <section id="about" class="my-24">
-          <h1 :class="isSticky?'sticky top-0 inline-block':''" class="mb-2 py-4 w-full backdrop-blur-sm text-2xl md:text-3xl font-semibold text-white">About Me</h1>
+          <h1 :class="isSticky ? 'sticky top-0 inline-block' : ''" class="mb-2 py-4 w-full backdrop-blur-sm text-2xl md:text-3xl font-semibold text-white">About Me</h1>
           <div>
             <p class="mb-4">
               I am a student who dreams of becoming a
@@ -35,26 +35,25 @@
             </p>
           </div>
         </section>
-        <section id="experience" class="my-24 ">
-          <h1 :class="isSticky?'sticky top-0 inline-block':''" class="mb-2 py-4 w-full backdrop-blur-sm text-2xl md:text-3xl font-semibold text-white">Experience</h1>
+        <section id="experience" class="my-24">
+          <h1 :class="isSticky ? 'sticky top-0 inline-block' : ''" class="mb-2 py-4 w-full backdrop-blur-sm text-2xl md:text-3xl font-semibold text-white">Experience</h1>
           <div>
             <header>2021 — Present</header>
             <h2 class="mb-4 font-bold">Student at vocational school</h2>
             <p>
-              Learned about basic concepts, syntax, and logic of programming
-              languages such as PHP, Java, JavaScript, and others. Also learned about how to apply these programming languages to create applications, web and other projects. I hope that by studying at this vocational school, I can
-              develop my potential and interest in the field of programming.
+              Learned about basic concepts, syntax, and logic of programming languages such as PHP, Java, JavaScript, and others. Also learned about how to apply these programming languages to create applications, web and other projects. I
+              hope that by studying at this vocational school, I can develop my potential and interest in the field of programming.
             </p>
           </div>
         </section>
         <!-- achievement -->
-        <section id="achievement" class="my-24 ">
-          <h1 :class="isSticky?'sticky top-0 inline-block':''" class="mb-2 py-4 w-full backdrop-blur-sm text-2xl md:text-3xl font-semibold text-white">Achievement</h1>
+        <section id="achievement" class="my-24">
+          <h1 :class="isSticky ? 'sticky top-0 inline-block' : ''" class="mb-2 py-4 w-full backdrop-blur-sm text-2xl md:text-3xl font-semibold text-white">Achievement</h1>
           <Achievements />
         </section>
         <!-- project -->
-        <section id="project" class="mt-24 ">
-          <h1 :class="isSticky?'sticky top-0 inline-block':''" class="mb-2 py-4 w-full backdrop-blur-sm text-2xl md:text-3xl font-semibold text-white">Projects</h1>
+        <section id="project" class="mt-24">
+          <h1 :class="isSticky ? 'sticky top-0 inline-block' : ''" class="mb-2 py-4 w-full backdrop-blur-sm text-2xl md:text-3xl font-semibold text-white">Projects</h1>
           <Projects />
         </section>
         <!-- addition -->
@@ -78,3 +77,14 @@
     isSticky.value = rect.top <= 0;
   }
 </script>
+
+<style>
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
