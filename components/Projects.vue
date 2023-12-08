@@ -2,10 +2,10 @@
   <div class="mb-12" v-for="project in projects" :key="project">
     <img class="h-full w-full rounded-md" loading="lazy" :src="`/images/${project.image}`" alt="image project" />
     <div>
-      <NuxtLink :to="`${project.URL}`" target="blank" class="group mt-1 mb-2 w-fit md:text-lg text-slate-200 font-semibold hover:text-teal-300 duration-200">
+      <NuxtLink :to="`${project.URL}`" target="blank" class="group mt-1 mb-2 w-fit md:text-lg text-[#F3F3F4] font-semibold hover:text-teal-300 duration-200">
         {{ project.name }}
       </NuxtLink>
-      <p class="text-xs md:text-base text-slate-400">
+      <p class="text-sm md:text-base text-[#7E7F83]">
         {{ project.desk }}
       </p>
       <div class="mt-2 flex space-x-2">

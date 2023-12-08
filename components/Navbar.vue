@@ -21,16 +21,3 @@
 <script setup>
   const isOpen = ref(false);
 </script>
-<!-- <template>
-  <div class="sticky top-0 backdrop-blur-sm text-white">
-    <NuxtLink to="/">
-      About
-    </NuxtLink>
-    <NuxtLink to="/">
-      Rewards
-    </NuxtLink>
-    <NuxtLink to="/">
-      Projects
-    </NuxtLink>
-  </div>
-</template> -->

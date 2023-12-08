@@ -1,7 +1,7 @@
 <template>
   <div class="mb-12" v-for="achievement in achievements" :key="achievement">
     <header>{{ achievement.header }}</header>
-    <h2 class="mb-4 font-bold text-slate-200">{{ achievement.name }}</h2>
+    <h2 class="mb-4 font-bold text-[#7E7F83]">{{ achievement.name }}</h2>
     <p class="text-sm md:text-base">
       {{ achievement.desk }}
     </p>
