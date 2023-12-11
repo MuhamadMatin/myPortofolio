@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-0 text-xs text-[#7E7F83]">
+  <div class="mt-0 text-xs text-text">
     This website was created using the <span class="duration-200 hover:text-teal-400"><NuxtLink :to="`${nuxt}`" target="blank">Nuxt</NuxtLink></span> framework and created using
     <span class="duration-200 hover:text-cyan-400"><NuxtLink :to="`${tailwindcss}`" target="blank"> Tailwind</NuxtLink></span
     >. Published using

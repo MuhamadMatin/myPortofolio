@@ -2,10 +2,10 @@
   <div class="mb-12" v-for="project in projects" :key="project">
     <img class="h-full w-full rounded-md" loading="lazy" :src="`/images/${project.image}`" alt="image project" />
     <div>
-      <NuxtLink :to="`${project.URL}`" target="blank" class="group mt-1 mb-2 w-fit md:text-lg text-[#F3F3F4] font-semibold hover:text-teal-300 duration-200">
+      <NuxtLink :to="`${project.URL}`" target="blank" class="group block mt-1.5 w-fit md:text-lg text-white font-semibold hover:text-teal-300 duration-200">
         {{ project.name }}
       </NuxtLink>
-      <p class="text-sm md:text-base text-[#7E7F83]">
+      <p class="text-sm md:text-base text-text">
         {{ project.desk }}
       </p>
       <div class="mt-2 flex space-x-2">
@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-  const projects = [
+  const projects = ref([
     {
       name: 'Nuxt blog',
       desk: 'I created a blog using the Nuxt Content from Nuxt.js as a means to learn the Nuxt module. The nuxt content is one of many modules available in Nuxt.js, a framework based on Vue.js. I can write my blog content using .md, .yml, .csv or .json. By creating this blog, I can improve my knowledge and skills about Nuxt.js and its modules',
@@ -45,5 +45,5 @@
       svg: ['html.svg', 'css.svg', 'js.svg'],
       URL: 'https://metallyleopart.github.io/GenerateQR/',
     },
-  ];
+  ]);
 </script>

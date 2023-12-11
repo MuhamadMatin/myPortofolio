@@ -1,15 +1,12 @@
 <template>
   <div class="mb-12" v-for="achievement in achievements" :key="achievement">
-    <header>{{ achievement.header }}</header>
-    <h2 class="mb-4 font-bold text-[#7E7F83]">{{ achievement.name }}</h2>
-    <p class="text-sm md:text-base">
-      {{ achievement.desk }}
-    </p>
+    <header class="mb-0.5">{{ achievement.header }}</header>
+    <h2 class="font-bold text-text">{{ achievement.name }}</h2>
   </div>
 </template>
 
 <script setup>
-  const achievements = [
+  const achievements = ref([
     {
       header: 'September 2023 — Dicoding Indonesia',
       name: 'Belajar Dasar Visualisasi Data',
@@ -22,5 +19,5 @@
       header: 'July 2023 — Dicoding Indonesia',
       name: 'Memulai Dasar Pemrograman Untuk Menjadi Pengembang Software',
     },
-  ];
+  ]);
 </script>
