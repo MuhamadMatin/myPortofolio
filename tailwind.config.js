@@ -2,6 +2,9 @@
 export default {
   content: [],
   theme: {
+    fontFamily: {
+      'tes': 'Helvetica, Arial, sans-serif',
+    },
     extend: {
       colors: {
         'text': '#7E7F83',
