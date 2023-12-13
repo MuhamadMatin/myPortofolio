@@ -1,6 +1,6 @@
 <template>
   <!-- @click.right="handleRightClick()" -->
-  <div class="bg-background font-tes">
+  <div class="bg-[#121212] font-tes">
     <Head>
       <!-- ini merupakan cara menambahkan head pada Nuxt -->
       <Html lang="en" />
