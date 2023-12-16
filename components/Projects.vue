@@ -22,7 +22,7 @@
       desk: 'I created a blog using the Nuxt Content from Nuxt.js as a means to learn the Nuxt module. The nuxt content is one of many modules available in Nuxt.js, a framework based on Vue.js. I can write my blog content using .md, .yml, .csv or .json. By creating this blog, I can improve my knowledge and skills about Nuxt.js and its modules',
       image: 'blog.webp',
       svg: ['nuxt.svg', 'tailwind-css.svg'],
-      URL: 'https://learnuxtblog.netlify.app/',
+      URL: 'https://blogwithnuxt.netlify.app/',
     },
     {
       name: 'Typing game',
