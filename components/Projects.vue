@@ -25,6 +25,13 @@
       URL: 'https://learnuxtblog.netlify.app/',
     },
     {
+      name: 'Typing game',
+      desk: 'I created typing game, this game is designed to hone your finger skills and speed in an interactive way',
+      image: 'typing.webp',
+      svg: ['html.svg', 'css.svg', 'js.svg'],
+      URL: 'https://metallyleopart.github.io/TypingText/',
+    },
+    {
       name: 'Image Search with Unsplash API',
       desk: 'I created a website that displays various interesting photos from the Unsplash API. I used documentation provided by various sources to learn how to access and process data from the API',
       image: 'image.webp',
