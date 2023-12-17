@@ -39,6 +39,13 @@
       URL: 'https://metallyleopart.github.io/ImageSearch/',
     },
     {
+      name: 'Color Generate',
+      desk: 'I created a color generator for inspiration and creativity and makes the color selection process easier for you.',
+      image: 'color.webp',
+      svg: ['html.svg', 'css.svg', 'js.svg'],
+      URL: 'https://metallyleopart.github.io/colorGenerate/',
+    },
+    {
       name: 'Quiz web',
       desk: 'I created a quiz website that can test users knowledge and insight on various topics. I use web technologies such as HTML, CSS, and JavaScript to create interactive and responsive interfaces',
       image: 'quiz.webp',
