@@ -5,7 +5,7 @@
       <NuxtLink :to="`${project.URL}`" target="blank" class="group block mt-1.5 w-fit md:text-lg text-white font-semibold hover:text-teal-300 duration-200">
         {{ project.name }}
       </NuxtLink>
-      <p class="text-sm md:text-base text-text">
+      <p class="text-sm md:text-base">
         {{ project.desk }}
       </p>
       <div class="mt-2 flex space-x-2">
@@ -17,6 +17,13 @@
 
 <script setup>
   const projects = ref([
+  {
+      name: 'Image Search with Pexel API',
+      desk: 'I rebuilt the Image Search website using the Pexel API. I used several Nuxt modules such as Nuxt Google-Font, Nuxt Security, Nuxt Image, and TailwindCSS to provide a new web experience than before. This project is part of my efforts to improve my skills in web development.',
+      image: 'image-remake.webp',
+      svg: ['nuxt.svg', 'tailwind-css.svg', 'nuxt-security.svg', 'image.svg'],
+      URL: 'https://imagenuxt.netlify.app/',
+    },
     {
       name: 'Nuxt blog',
       desk: 'I created a blog using the Nuxt Content from Nuxt.js as a means to learn the Nuxt module. The nuxt content is one of many modules available in Nuxt.js, a framework based on Vue.js. I can write my blog content using .md, .yml, .csv or .json. By creating this blog, I can improve my knowledge and skills about Nuxt.js and its modules',

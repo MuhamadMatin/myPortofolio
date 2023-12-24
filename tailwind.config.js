@@ -7,7 +7,7 @@ export default {
     },
     extend: {
       colors: {
-        'text': '#7E7F83',
+        'text': '#B4B4B7',
       },
     }
   },

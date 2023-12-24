@@ -1,18 +1,18 @@
 <template>
   <!-- @click.right="handleRightClick()" -->
-  <div class="bg-[#121212] font-tes">
+  <div class="bg-black text-text font-tes">
     <Head>
       <!-- ini merupakan cara menambahkan head pada Nuxt -->
       <Html lang="en" />
       <Title>{{ title }}</Title>
       <Meta name="description" :content="title" />
     </Head>
-    <div class="py-10 mx-auto text-white md:max-w-md lg:max-w-xl">
+    <div class="py-10 mx-auto md:max-w-md lg:max-w-xl">
       <div class="px-5">
         <h1 class="text-4xl font-bold tracking-tight">Muhamad Matin Anugrah Pujayanto</h1>
         <h2 class="mt-4 leading-normal font-inter">
           Students with aspirations of becoming
-          <span class="text-text hover:text-teal-300 duration-200">full stack developers</span>
+          <span class="hover:text-teal-300 duration-200">full stack developers</span>
         </h2>
         <!-- about -->
         <section id="about" class="my-24">
@@ -41,7 +41,7 @@
 </template>
 
 <script setup>
-  const title = ref('My Portofolio');
+  const title = ref("Portfolio with Matin's");
   const isSticky = ref(false);
 
   onMounted(() => {
