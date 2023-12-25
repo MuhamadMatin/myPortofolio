@@ -2,14 +2,19 @@
   <div class="mb-12" v-for="project in projects" :key="project">
     <img class="h-full w-full rounded-md" loading="lazy" :src="`/images/${project.image}`" alt="image project" />
     <div>
-      <NuxtLink :to="`${project.URL}`" target="blank" class="group block mt-1.5 w-fit md:text-lg text-white font-semibold hover:text-teal-300 duration-200">
+      <h1 class="mt-1.5 w-fit md:text-lg text-white font-semibold hover:text-teal-300 duration-200">
         {{ project.name }}
-      </NuxtLink>
+      </h1>
       <p class="text-sm md:text-base">
         {{ project.desk }}
       </p>
-      <div class="mt-2 flex space-x-2">
-        <img v-for="svg in project.svg" :key="svg" class="w-6 h-6" :src="`/svg/${svg}`" alt="svg image" />
+      <div class="mt-2 flex justify-between items-center">
+        <span class="flex space-x-2">
+          <img v-for="svg in project.svg" :key="svg" class="w-6 h-6" :src="`/svg/${svg}`" alt="svg image" />
+        </span>
+        <NuxtLink :to="`${project.URL}`" target="blank" class="group py-2 md:py-2.5 px-4 md:px-5 bg-gray-900 text-sm duration-75 font-medium rounded-full text-gray-400 border-0 hover:text-white hover:bg-gray-700">
+          <span class="inline-block duration-75 group-hover:-translate-y-1 group-hover:translate-x-1">🚀</span> Click rocket
+        </NuxtLink>
       </div>
     </div>
   </div>
@@ -17,7 +22,7 @@
 
 <script setup>
   const projects = ref([
-  {
+    {
       name: 'Image Search with Pexel API',
       desk: 'I rebuilt the Image Search website using the Pexel API. I used several Nuxt modules such as Nuxt Google-Font, Nuxt Security, Nuxt Image, and TailwindCSS to provide a new web experience than before. This project is part of my efforts to improve my skills in web development.',
       image: 'image-remake.webp',
