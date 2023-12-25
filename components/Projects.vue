@@ -2,7 +2,7 @@
   <div class="mb-12" v-for="project in projects" :key="project">
     <NuxtImg class="h-full w-full rounded-md" loading="lazy" :src="`/images/${project.image}`" alt="image project" />
     <div>
-      <h1 class="mt-1.5 w-fit md:text-lg text-white font-semibold hover:text-teal-300 duration-200">
+      <h1 class="mt-2 md:mt-2.5 w-fit text-lg md:text-xl text-white font-semibold hover:text-teal-300 duration-200">
         {{ project.name }}
       </h1>
       <p class="text-sm md:text-base">
@@ -12,8 +12,8 @@
         <span class="flex space-x-2">
           <img v-for="svg in project.svg" :key="svg" class="w-6 h-6" :src="`/svg/${svg}`" alt="svg image" />
         </span>
-        <NuxtLink :to="`${project.URL}`" target="blank" class="group py-2 md:py-2.5 px-4 md:px-5 bg-gray-900 text-sm duration-100 font-medium rounded-full text-gray-400 border-0 hover:text-white hover:bg-gray-700 active:text-white active:bg-gray-700">
-          <span class="inline-block duration-100 group-hover:-translate-y-1 group-hover:translate-x-1 group-focus:-translate-y-1 group-focus:translate-x-1">🚀</span> Click rocket
+        <NuxtLink :to="`${project.URL}`" target="blank" class="group py-2 md:py-2.5 px-4 md:px-5 bg-gray-900 text-sm duration-100 font-medium rounded-full text-gray-400 border-0 hover:text-white hover:bg-gray-700">
+          <span class="inline-block duration-100 group-hover:-translate-y-1 group-hover:translate-x-1">🚀</span> Click rocket
         </NuxtLink>
       </div>
     </div>
