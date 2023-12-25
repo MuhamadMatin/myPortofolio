@@ -13,7 +13,7 @@
           <img v-for="svg in project.svg" :key="svg" class="w-6 h-6" :src="`/svg/${svg}`" alt="svg image" />
         </span>
         <NuxtLink :to="`${project.URL}`" target="blank" class="group py-2 md:py-2.5 px-4 md:px-5 bg-gray-900 text-sm duration-75 font-medium rounded-full text-gray-400 border-0 hover:text-white hover:bg-gray-700">
-          <span class="inline-block duration-75 group-hover:-translate-y-1 group-hover:translate-x-1">🚀</span> Click rocket
+          <span class="inline-block duration-100 group-hover:-translate-y-1 group-hover:translate-x-1">🚀</span> Click rocket
         </NuxtLink>
       </div>
     </div>
@@ -26,7 +26,7 @@
       name: 'Image Search with Pexel API',
       desk: 'I rebuilt the Image Search website using the Pexel API. I used several Nuxt modules such as Nuxt Google-Font, Nuxt Security, Nuxt Image, and TailwindCSS to provide a new web experience than before. This project is part of my efforts to improve my skills in web development.',
       image: 'image-remake.webp',
-      svg: ['nuxt.svg', 'tailwind-css.svg', 'nuxt-security.svg', 'image.svg'],
+      svg: ['nuxt.svg', 'tailwind-css.svg', 'nuxt-security.svg'],
       URL: 'https://imagenuxt.netlify.app/',
     },
     {
