@@ -10,7 +10,7 @@
       </p>
       <div class="mt-2 flex justify-between items-center">
         <span class="flex space-x-2">
-          <img v-for="svg in project.svg" :key="svg" class="w-6 h-6" :src="`/svg/${svg}`" alt="svg image" />
+          <NuxtImg v-for="svg in project.svg" :key="svg" class="w-6 h-6" :src="`/svg/${svg}`" alt="svg image" />
         </span>
         <NuxtLink :to="`${project.URL}`" target="blank" class="group py-2 md:py-2.5 px-4 md:px-5 bg-gray-900 text-sm duration-100 font-medium rounded-full text-gray-400 border-0 hover:text-white hover:bg-gray-700">
           <span class="inline-block duration-100 group-hover:-translate-y-1 group-hover:translate-x-1">🚀</span> Click rocket
@@ -56,13 +56,6 @@
       image: 'color.webp',
       svg: ['html.svg', 'css.svg', 'js.svg'],
       URL: 'https://metallyleopart.github.io/colorGenerate/',
-    },
-    {
-      name: 'Quiz web',
-      desk: 'I created a quiz website that can test users knowledge and insight on various topics. I use web technologies such as HTML, CSS, and JavaScript to create interactive and responsive interfaces',
-      image: 'quiz.webp',
-      svg: ['html.svg', 'css.svg', 'js.svg'],
-      URL: 'https://metallyleopart.github.io/Question/',
     },
     {
       name: 'QR Generate',
