@@ -35,6 +35,7 @@
         </section>
         <!-- addition -->
         <Additional />
+        <Footer />
       </div>
     </div>
   </div>
@@ -53,6 +54,8 @@
     const rect = h1Element.getBoundingClientRect();
     isSticky.value = rect.top <= 0;
   }
+
+  await preloadComponents('Footer');
 
   // function handleRightClick() {
   //   document.addEventListener('contextmenu', event => event.preventDefault());
