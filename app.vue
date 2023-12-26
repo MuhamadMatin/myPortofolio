@@ -33,7 +33,7 @@
         <Projects />
       </section>
       <!-- video fish -->
-      <div class="mb-2">
+      <div class="mb-3">
         <div class="pr-4 py-1.5 w-full" :class="isFooter ? 'flex justify-end' : 'flex justify-between'">
           <p v-if="!isFooter" class="text-left text-sm font-medium">
             Click arrow
