@@ -31,28 +31,28 @@
 <script setup>
   const projects = ref([
     {
-      name: 'Image Search with Pexel API',
+      name: 'Remake Image Search',
       desk: 'I rebuilt the Image Search website using the Pexel API. I used several Nuxt modules such as Nuxt Google-Font, Nuxt Security, Nuxt Image, and TailwindCSS to provide a new web experience than before. This project is part of my efforts to improve my skills in web development.',
       image: 'image-remake.webp',
       svg: ['Nuxt.svg', 'Tailwind-CSS.svg', 'Nuxt-Security.svg'],
       URL: 'https://imagenuxt.netlify.app/',
     },
     {
-      name: 'Nuxt blog',
+      name: 'Nuxt Blog',
       desk: 'I created a blog using the Nuxt Content from Nuxt.js as a means to learn the Nuxt module. The nuxt content is one of many modules available in Nuxt.js, a framework based on Vue.js. I can write my blog content using .md, .yml, .csv or .json. By creating this blog, I can improve my knowledge and skills about Nuxt.js and its modules',
       image: 'blog.webp',
       svg: ['Nuxt.svg', 'Tailwind-CSS.svg'],
       URL: 'https://blogwithnuxt.netlify.app/',
     },
     {
-      name: 'Typing game',
+      name: 'Typing Game',
       desk: 'I created typing game, this game is designed to hone your finger skills and speed in an interactive way',
       image: 'typing.webp',
       svg: ['HTML.svg', 'CSS.svg', 'JavaScript.svg'],
       URL: 'https://metallyleopart.github.io/TypingText/',
     },
     {
-      name: 'Image Search with Unsplash API',
+      name: 'Image Search With Unsplash API',
       desk: 'I created a website that displays various interesting photos from the Unsplash API. I used documentation provided by various sources to learn how to access and process data from the API',
       image: 'image.webp',
       svg: ['HTML.svg', 'CSS.svg', 'JavaScript.svg'],

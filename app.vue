@@ -29,12 +29,28 @@
       </section>
       <!-- project -->
       <section id="project" class="mt-24">
-        <h1 :class="isSticky ? 'sticky top-0 inline-block' : ''" class="mb-2 py-4 w-full backdrop-blur-sm text-3xl font-semibold text-white">Projects</h1>
+        <h1 :class="isSticky ? 'sticky z-10 top-0 inline-block' : ''" class="mb-2 py-4 w-full backdrop-blur-sm text-3xl font-semibold text-white">Projects</h1>
         <Projects />
       </section>
+      <!-- video fish -->
+      <div class="mb-2">
+        <div class="pr-4 py-1.5 w-full" :class="isFooter ? 'flex justify-end' : 'flex justify-between'">
+          <p v-if="!isFooter" class="text-left text-sm font-medium">
+            Click arrow
+          </p>
+          <span @click="isFooter = !isFooter" v-if="!isFooter">
+            <img class="h-5 w-5" src="./public/svg/up-arrow.svg" alt="up arrow" />
+          </span>
+          <span @click="isFooter = !isFooter" v-else>
+            <img class="h-5 w-5" src="./public/svg/down-arrow.svg" alt="down arrow" />
+          </span>
+        </div>
+        <span v-if="isFooter">
+          <Footer />
+        </span>
+      </div>
       <!-- addition -->
       <Additional />
-      <Footer />
     </div>
   </div>
 </template>
@@ -42,6 +58,7 @@
 <script setup>
   const title = ref("Portfolio with Matin's");
   const isSticky = ref(false);
+  const isFooter = ref(false);
 
   onMounted(() => {
     window.addEventListener('scroll', handleScroll);
