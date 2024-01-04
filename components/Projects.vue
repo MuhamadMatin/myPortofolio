@@ -49,28 +49,28 @@
       desk: 'I created typing game, this game is designed to hone your finger skills and speed in an interactive way',
       image: 'typing.webp',
       svg: ['HTML.svg', 'CSS.svg', 'JavaScript.svg'],
-      URL: 'https://metallyleopart.github.io/TypingText/',
+      URL: 'https://muhamadmatin.github.io/TypingText/',
     },
     {
       name: 'Image Search With Unsplash API',
       desk: 'I created a website that displays various interesting photos from the Unsplash API. I used documentation provided by various sources to learn how to access and process data from the API',
       image: 'image.webp',
       svg: ['HTML.svg', 'CSS.svg', 'JavaScript.svg'],
-      URL: 'https://metallyleopart.github.io/ImageSearch/',
+      URL: 'https://muhamadmatin.github.io/ImageSearch/',
     },
     {
       name: 'Color Generate',
       desk: 'I created a color generator for inspiration and creativity and makes the color selection process easier for you.',
       image: 'color.webp',
       svg: ['HTML.svg', 'CSS.svg', 'JavaScript.svg'],
-      URL: 'https://metallyleopart.github.io/colorGenerate/',
+      URL: 'https://muhamadmatin.github.io/colorGenerate/',
     },
     {
       name: 'QR Generate',
       desk: 'I created a website that can generate QR codes from text and URLs using the API from https://goqr.me/api/. I leveraged the documentation available on the website to understand how to send requests and receive responses from the API',
       image: 'qr.webp',
       svg: ['HTML.svg', 'CSS.svg', 'JavaScript.svg'],
-      URL: 'https://metallyleopart.github.io/GenerateQR/',
+      URL: 'https://muhamadmatin.github.io/GenerateQR/',
     },
   ]);
 </script>
