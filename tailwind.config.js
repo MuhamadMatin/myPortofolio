@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         'text': '#B4B4B7',
+        'input': '#d4d4d9',
       },
     }
   },

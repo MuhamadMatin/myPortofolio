@@ -7,17 +7,16 @@
       <Title>{{ title }}</Title>
       <Meta name="description" :content="title" />
     </Head>
-    <div class="py-10 px-5 mx-auto md:max-w-md lg:max-w-xl">
-      <h1 class="text-white text-4xl font-bold tracking-tight">Muhamad Matin Anugrah Pujayanto</h1>
-      <h2 class="mt-4 leading-normal font-inter">
-        Students with aspirations of becoming
-        <span class="hover:text-teal-300 duration-200">full stack developers</span>
-      </h2>
+    <div class="py-10 px-5 mx-auto md:pt-10 md:pb-5 lg:max-w-xl">
+      <section id="name" class="flex items-center h-[100dvh]">
+        <Name />
+      </section>
       <!-- about -->
       <section id="about" class="my-24">
         <h1 :class="isSticky ? 'sticky top-0 inline-block' : ''" class="mb-2 py-4 w-full backdrop-blur-sm text-3xl font-semibold text-white">About Me</h1>
         <About />
       </section>
+      <!-- experience -->
       <section id="experience" class="my-24">
         <h1 :class="isSticky ? 'sticky top-0 inline-block' : ''" class="mb-2 py-4 w-full backdrop-blur-sm text-3xl font-semibold text-white">Experience</h1>
         <Experiences />
@@ -33,7 +32,7 @@
         <Projects />
       </section>
       <!-- video fish -->
-      <div class="mb-3">
+      <!-- <div class="mb-3">
         <div class="pr-4 py-1.5 w-full" :class="isFooter ? 'flex justify-end' : 'flex justify-between'">
           <p v-if="!isFooter" class="text-left text-sm font-medium">
             Click arrow
@@ -48,10 +47,15 @@
         <span v-if="isFooter">
           <Footer />
         </span>
-      </div>
+      </div> -->
+      <!-- <section id="connect" class="mt-28 mb-5 md:my-20">
+        <h1 :class="isSticky ? 'sticky z-10 top-0 inline-block' : ''" class="mb-2 py-4 w-full backdrop-blur-sm text-center text-3xl font-semibold text-white">Connect With Me</h1>
+        <Footer />
+      </section> -->
       <!-- addition -->
       <Additional />
     </div>
+    <img class="h-[5%] w-[5%]" src="./public/video/chip-unscreen.gif" alt="cip" />
   </div>
 </template>
 
