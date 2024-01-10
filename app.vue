@@ -55,7 +55,7 @@
       <!-- addition -->
       <Additional />
     </div>
-    <img class="h-[5%] w-[5%]" src="./public/video/chip-unscreen.gif" alt="cip" />
+    <img class="h-[15%] w-[15%] md:w-[5%] md:h-[5%]" src="./public/video/chip-unscreen.gif" alt="cip" />
   </div>
 </template>
 
