@@ -7,7 +7,7 @@
       <Title>{{ title }}</Title>
       <Meta name="description" :content="title" />
     </Head>
-    <div class="py-10 px-5 mx-auto md:pt-10 md:pb-5 lg:max-w-xl">
+    <div class="pt-10 px-5 mx-auto md:pt-10 md:pb-5 lg:max-w-xl">
       <section id="name" class="flex items-center h-[100dvh]">
         <Name />
       </section>
