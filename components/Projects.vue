@@ -45,6 +45,13 @@
       URL: 'https://blogwithnuxt.netlify.app/',
     },
     {
+      name: 'Nuxt Weather',
+      desk: 'I created a simple weather website I created using framwrok Nuxt',
+      image: 'weather.webp',
+      svg: ['Nuxt.svg', 'Tailwind-CSS.svg'],
+      URL: 'https://weathernwithuxt.netlify.app/',
+    },
+    {
       name: 'Typing Game',
       desk: 'I created typing game, this game is designed to hone your finger skills and speed in an interactive way',
       image: 'typing.webp',
