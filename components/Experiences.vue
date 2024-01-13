@@ -1,13 +1,11 @@
 <template>
-  <div class="mt-10">
-    <div class="my-7" v-for="experience in experiences" :key="experience">
-      <header class="text-white mb-0.5">{{ experience.since }}</header>
-      <h2 class="font-bold" :class="experience.place != null ? 'mt-3' : 'mt-3'">{{ experience.position }}</h2>
-      <!-- <h3 class="font-semibold mb-0.5">{{ experience.place }}</h3> -->
-      <p>
-        {{ experience.content }}
-      </p>
-    </div>
+  <div class="mb-10" v-for="experience in experiences" :key="experience">
+    <header class="text-white mb-0.5">{{ experience.since }}</header>
+    <h2 class="font-bold" :class="experience.place != null ? 'mb-3' : 'mb-3'">{{ experience.position }}</h2>
+    <!-- <h3 class="font-semibold mb-0.5">{{ experience.place }}</h3> -->
+    <p>
+      {{ experience.content }}
+    </p>
   </div>
 </template>
 
