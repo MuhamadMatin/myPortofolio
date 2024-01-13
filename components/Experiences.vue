@@ -1,10 +1,13 @@
 <template>
-  <div v-for="experience in experiences" :key="experience">
-    <header class="text-white mb-0.5">{{ experience.since }}</header>
-    <h2 class="mb-4 font-bold">{{ experience.position }}</h2>
-    <p>
-      {{ experience.content }}
-    </p>
+  <div class="mt-10">
+    <div class="my-7" v-for="experience in experiences" :key="experience">
+      <header class="text-white mb-0.5">{{ experience.since }}</header>
+      <h2 class="font-bold" :class="experience.place != null ? 'mt-3' : 'mt-3'">{{ experience.position }}</h2>
+      <!-- <h3 class="font-semibold mb-0.5">{{ experience.place }}</h3> -->
+      <p>
+        {{ experience.content }}
+      </p>
+    </div>
   </div>
 </template>
 
@@ -14,7 +17,13 @@
       since: '2021 — Present',
       position: 'Student at vocational school',
       content:
-        'Learned about basic concepts, syntax, and logic of programming languages such as PHP, Java, JavaScript, and others. Also learned about how to apply these programming languages to create applications, web and other projects. I hope that by studying at this vocational school, I can develop my potential and interest in the field of programming.',
+        'Learning about basic concepts, syntax, and logic of programming languages such as PHP, Java, JavaScript, and others. Also learned about how to apply these programming languages to create applications, web and other projects. I hope that by studying at this vocational school, I can develop my potential and interest in the field of programming.',
+    },
+    {
+      since: 'Jan — Apr 2023',
+      position: 'Internship Frond-End Developer',
+      place: 'PT Redbuzz Mediatama',
+      content: 'Learned how to properly use several libraries and frameworks such as jQuery Vue, Nuxt, Bootstrap for Front-End developers.',
     },
   ]);
 </script>

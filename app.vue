@@ -56,11 +56,22 @@
       <Additional />
     </div>
     <img class="h-[15%] w-[15%] md:w-[5%] md:h-[5%]" src="./public/video/chip-unscreen.gif" alt="cip" />
+    <!-- <svg class="fill-white" width="150" height="150">
+      <defs>
+        <path id="path" d="M 15, 75 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0" />
+      </defs>
+
+      <image href="./public/video/chip-unscreen.gif" x="45" y="45" height="60px" width="60px" />
+
+      <text font-size="15">
+        <textPath xlink:href="#path">Teks Mengelilingi GIF</textPath>
+      </text>
+    </svg> -->
   </div>
 </template>
 
 <script setup>
-  const title = ref("Portfolio with Matin's");
+  const title = ref("Matin's Portfolio");
   const isSticky = ref(false);
   const isFooter = ref(false);
 

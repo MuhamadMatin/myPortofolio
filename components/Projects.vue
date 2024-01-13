@@ -14,7 +14,7 @@
             <div class="absolute -bottom-[calc(100%+0.5rem)] left-[50%] -translate-x-[50%] hidden group-hover:block w-auto">
               <div class="bottom-full right-0 rounded-md bg-gray-900 px-4 py-1 text-xs text-white whitespace-nowrap">
                 {{ svg.replace('.svg', '').replace(/-/, ' ') }}
-                <svg class="absolute left-0 rotate-180 bottom-full h-2 w-full fill-gray-900" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon points="0,0 127.5,127.5 255,0" /></svg>
+                <svg class="absolute left-0 rotate-180 bottom-full h-2 w-full" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon points="0,0 127.5,127.5 255,0" /></svg>
               </div>
             </div>
             <img class="w-6 h-6" :src="`/svg/${svg}`" alt="svg image" />
