@@ -3,7 +3,7 @@
     <header class="text-white font-bold text-xl">{{ experience.position }}</header>
     <h2 class="text-white">{{ experience.place }}</h2>
     <h3 class="text-white text-sm mb-2.5">{{ experience.since }}</h3>
-    <p class="text-">
+    <p>
       {{ experience.content }}
     </p>
   </div>
