@@ -2,7 +2,7 @@
   <div class="mb-12" v-for="project in projects" :key="project">
     <NuxtImg class="h-full w-full rounded-md" loading="lazy" :src="`/images/${project.image}`" alt="image project" />
     <div>
-      <h1 class="mt-2 md:mt-2.5 w-fit text-lg md:text-xl text-white font-semibold hover:text-teal-300 duration-200">
+      <h1 class="mt-2 w-fit text-xl md:mt-2.5 md:text-2xl text-white font-semibold hover:text-teal-300 duration-200">
         {{ project.name }}
       </h1>
       <p class="text-sm md:text-base">
