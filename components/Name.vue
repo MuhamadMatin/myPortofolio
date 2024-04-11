@@ -2,7 +2,7 @@
   <div>
     <h1 class="text-white text-4xl font-bold tracking-tight">Muhamad Matin Anugrah Pujayanto</h1>
     <h2 class="mt-3 leading-normal font-inter">
-      Students with aspirations of becoming
+      Student with aspirations of becoming
       <span class="hover:text-teal-300 duration-200">Full Stack Web Developer</span>
     </h2>
     <div class="flex gap-x-4">
