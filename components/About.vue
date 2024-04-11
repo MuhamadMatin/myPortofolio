@@ -2,7 +2,7 @@
   <div>
     <p class="mb-4">
       I am a student who dreams of becoming a
-      <span class="hover:text-teal-300 duration-200">full stack developer</span>, namely someone who can develop a website from start to finish by mastering the various technologies and tools needed
+      <span class="hover:text-teal-300 duration-200">Full Stack Developer</span>, namely someone who can develop a website from start to finish by mastering the various technologies and tools needed
     </p>
     <p class="mb-4">
       In
