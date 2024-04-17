@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'nuxt-icon'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
   // runtimeConfig: {
   //   public: {
   //     supabaseApi: process.env.SUPABASE_URL,
