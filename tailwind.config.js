@@ -3,7 +3,7 @@ export default {
   content: [],
   theme: {
     fontFamily: {
-      'tes': 'Helvetica, Arial, sans-serif',
+      'helvetica': 'Helvetica, Arial, sans-serif',
     },
     extend: {
       colors: {
@@ -12,5 +12,7 @@ export default {
       },
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide'),
+  ],
 };

@@ -13,10 +13,12 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.9.3",
     "nuxt": "^3.8.0",
+    "nuxt-icon": "^0.6.10",
     "vue": "^3.3.7",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@nuxt/image": "^1.1.0"
+    "@nuxt/image": "^1.1.0",
+    "tailwind-scrollbar-hide": "^1.1.7"
   }
 }

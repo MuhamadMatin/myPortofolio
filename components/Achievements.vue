@@ -13,6 +13,13 @@
   const achievements = ref([
     {
       header: 'April 2024 — April 2027',
+      name: 'Belajar Dasar CSS',
+      credential: 'RFTABOX',
+      giver: 'Codepolitan',
+      url: 'https://codepolitan.com/c/RFTABOX',
+    },
+    {
+      header: 'April 2024 — April 2027',
       name: 'Belajar Dasar HTML',
       credential: 'KIE3AKG',
       giver: 'Codepolitan',
