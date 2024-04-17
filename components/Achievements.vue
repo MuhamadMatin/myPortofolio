@@ -1,8 +1,10 @@
 <template>
   <div class="mb-12" v-for="achievement in achievements" :key="achievement">
     <h2 class="text-white font-bold">{{ achievement.name }}</h2>
-    <h4 class="my-0.5">{{ achievement.giver }}</h4>
-    <h4 class="my-0.5">{{ achievement.header }}</h4>
+    <span class="my-0.5">
+      <h4>{{ achievement.giver }}</h4>
+      <h4>{{ achievement.header }}</h4>
+    </span>
     <NuxtLink :to="`${achievement.url}`" target="blank">
       <h5 class="hover:text-teal-500 duration-200">Credential {{ achievement.credential }}</h5>
     </NuxtLink>
@@ -30,7 +32,7 @@
       name: 'Alibaba Cloud Certification',
       credential: 'ACCD0119700100008897',
       giver: 'Alibaba Cloud',
-      url: '',
+      url: 'not-found',
     },
     {
       header: 'September 2023 — September 2025',
