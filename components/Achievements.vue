@@ -13,6 +13,13 @@
   const achievements = ref([
     {
       header: 'April 2024 — April 2027',
+      name: 'Belajar Bootstrap CSS Framework',
+      credential: 'K7OU1VU',
+      giver: 'Codepolitan',
+      url: 'https://codepolitan.com/c/K7OU1VU',
+    },
+    {
+      header: 'April 2024 — April 2027',
       name: 'Belajar Dasar CSS',
       credential: 'RFTABOX',
       giver: 'Codepolitan',
