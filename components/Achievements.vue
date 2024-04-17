@@ -1,8 +1,8 @@
 <template>
   <div class="mb-12" v-for="achievement in achievements" :key="achievement">
     <h2 class="text-white font-bold">{{ achievement.name }}</h2>
-    <p class="my-0.5">{{ achievement.giver }}</p>
-    <p class="my-0.5">{{ achievement.header }}</p>
+    <h3 class="my-0.5">{{ achievement.giver }}</h3>
+    <h3 class="my-0.5">{{ achievement.header }}</h3>
     <NuxtLink :to="`${achievement.url}`" target="blank">
       <h5 class="hover:text-teal-500 duration-200">Credential {{ achievement.credential }}</h5>
     </NuxtLink>
