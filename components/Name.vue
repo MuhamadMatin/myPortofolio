@@ -6,9 +6,9 @@
       <span class="hover:text-teal-300 duration-200">Full Stack Web Developer</span>
     </h2>
     <div class="flex gap-x-4">
-      <NuxtLink v-for="link in links" :key="link" :to="`${link.URL}`" target="blank" class="mt-2">
-        <Icon class="h-10 w-10 active:text-white hover:text-white duration-200" :name="`${link.svg}`" />
-        <!-- <img class="w-8 h-8" :src="`/svg/${link.svg}`" :alt="`${link.alt}`" /> -->
+      <NuxtLink v-for="link in links" :key="link" :to="`${link.URL}`" target="blank" class="mt-4">
+        <!-- <Icon class="h-10 w-10 active:text-white hover:text-white duration-200" :name="`${link.svg}`" /> -->
+        <img class="w-8 h-8" :src="`/svg/${link.svg}`" :alt="`${link.alt}`" />
       </NuxtLink>
     </div>
   </div>
@@ -17,17 +17,17 @@
 <script setup>
   const links = ref([
     {
-      svg: 'mdi:github',
+      svg: 'github.svg',
       alt: 'github icon',
       URL: 'https://github.com/MuhamadMatin',
     },
     {
-      svg: 'mdi:instagram',
+      svg: 'instagram.svg',
       alt: 'instagram icon',
       URL: 'https://www.instagram.com/matinwithcode?igsh=MzRlODBiNWFlZA==',
     },
     {
-      svg: 'mdi:linkedin',
+      svg: 'linkedin.svg',
       alt: 'linkedin icon',
       URL: 'https://linkedin.com/in/muhamad-matin-anugrah-pujayanto-b64515260',
     },

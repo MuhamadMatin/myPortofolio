@@ -7,7 +7,7 @@
       <Title>{{ title }}</Title>
       <Meta name="description" :content="title" />
     </Head>
-    <div class="pt-10 px-5 md:mx-auto md:pt-10 md:pb-5 md:max-w-md lg:p-0 lg:mx-5 lg:grid lg:grid-cols-2 lg:max-w-full overflow-auto lg:h-screen">
+    <div class="pt-10 px-5 mx-auto md:pt-10 md:pb-5 md:max-w-md lg:p-0 lg:mx-5 lg:grid lg:grid-cols-2 lg:max-w-full lg:h-screen">
       <div class="inline-block">
         <section id="name" class="flex items-center h-[100dvh]">
           <Name />
