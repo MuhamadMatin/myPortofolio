@@ -17,20 +17,20 @@
 <script setup>
   const links = ref([
     {
-      // svg: 'mdi:github',
-      svg: 'github.svg',
+      svg: 'mdi:github',
+      // svg: 'github.svg',
       alt: 'github icon',
       URL: 'https://github.com/MuhamadMatin',
     },
     {
-      // svg: 'mdi:instagram',
-      svg: 'instagram.svg',
+      svg: 'mdi:instagram',
+      // svg: 'instagram.svg',
       alt: 'instagram icon',
       URL: 'https://www.instagram.com/matinwithcode?igsh=MzRlODBiNWFlZA==',
     },
     {
-      // svg: 'mdi:linkedin',
-      svg: 'linkedin.svg',
+      svg: 'mdi:linkedin',
+      // svg: 'linkedin.svg',
       alt: 'linkedin icon',
       URL: 'https://linkedin.com/in/muhamad-matin-anugrah-pujayanto-b64515260',
     },
