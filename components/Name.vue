@@ -7,8 +7,8 @@
     </h2>
     <div class="flex gap-x-4">
       <NuxtLink v-for="link in links" :key="link" :to="`${link.URL}`" target="blank" area-label="connect withh me🤝">
-        <Icon class="mt-2 h-10 w-10 text-[#24292F] active:text-white hover:text-white duration-200" :name="`${link.svg}`" />
-        <!-- <img class="w-8 h-8" :src="`/svg/${link.svg}`" :alt="`${link.alt}`" /> -->
+        <!-- <Icon class="mt-2 h-10 w-10 text-[#24292F] active:text-white hover:text-white duration-200" :name="`${link.svg}`" /> -->
+        <NuxtImg class="mt-2 w-8 h-8" :src="`/svg/${link.svg}`" :alt="`${link.alt}`" />
       </NuxtLink>
     </div>
   </div>
@@ -17,20 +17,20 @@
 <script setup>
   const links = ref([
     {
-      svg: 'mdi:github',
-      // svg: 'github.svg',
+      // svg: 'mdi:github',
+      svg: 'github.svg',
       alt: 'github icon',
       URL: 'https://github.com/MuhamadMatin',
     },
     {
-      svg: 'mdi:instagram',
-      // svg: 'instagram.svg',
+      // svg: 'mdi:instagram',
+      svg: 'instagram.svg',
       alt: 'instagram icon',
       URL: 'https://www.instagram.com/matinwithcode?igsh=MzRlODBiNWFlZA==',
     },
     {
-      svg: 'mdi:linkedin',
-      // svg: 'linkedin.svg',
+      // svg: 'mdi:linkedin',
+      svg: 'linkedin.svg',
       alt: 'linkedin icon',
       URL: 'https://linkedin.com/in/muhamad-matin-anugrah-pujayanto-b64515260',
     },
