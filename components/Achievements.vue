@@ -3,8 +3,10 @@
     <h2 class="text-white font-bold">{{ achievement.name }}</h2>
     <h3 class="my-0.5">{{ achievement.giver }}</h3>
     <h3 class="my-0.5">{{ achievement.header }}</h3>
-    <NuxtLink :to="`${achievement.url}`" target="blank">
-      <h5 class="hover:text-teal-500 duration-200">Credential {{ achievement.credential }}</h5>
+    <NuxtLink class="flex justify-items-center group" :to="`${achievement.url}`" target="blank">
+      <h5 class="group-hover:text-teal-500 duration-200">Credential {{ achievement.credential }}</h5>
+      <Icon class="inline-block h-5 w-5 group-hover:text-teal-500 group-hover:translate-x-1 group-hover:-translate-y-1 duration-200" name="heroicons:arrow-up-right" />
+      <!-- <NuxtImg  loading="lazy" src="../public/svg/arrow-up-right.svg" /> -->
     </NuxtLink>
   </div>
 </template>
