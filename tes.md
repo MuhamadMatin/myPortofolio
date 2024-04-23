@@ -1,148 +1,64 @@
 <template>
-  <!-- @click.right="handleRightClick()" -->
-  <div class="bg-black text-text font-tes">
-    <Head>
-      <!-- ini merupakan cara menambahkan head pada Nuxt -->
-      <Html lang="en" />
-      <Title>{{ title }}</Title>
-      <Meta name="description" :content="title" />
-    </Head>
-    <div class="pt-10 px-5 mx-auto md:pt-10 md:pb-5 lg:max-w-xl">
-      <section id="name" class="flex items-center h-[100dvh]">
-        <Name />
-      </section>
-      <!-- about -->
-      <section id="about" class="my-24">
-        <h1 class="sticky z-10 top-0 inline-block mb-2 py-4 w-full backdrop-blur-sm text-3xl font-semibold text-white md:text-4xl">About Me</h1>
-        <About />
-      </section>
-      <!-- experience -->
-      <section id="experience" class="my-24">
-        <h1 class="sticky z-10 top-0 inline-block mb-2 py-4 w-full backdrop-blur-sm text-3xl font-semibold text-white md:text-4xl">Experience</h1>
-        <Experiences />
-      </section>
-      <!-- achievement -->
-      <section id="achievement" class="my-24">
-        <h1 class="sticky z-10 top-0 inline-block mb-2 py-4 w-full backdrop-blur-sm text-3xl font-semibold text-white md:text-4xl">Achievement</h1>
-        <Achievements />
-      </section>
-      <!-- project -->
-      <section id="project" class="mt-24">
-        <h1 class="sticky z-10 top-0 inline-block mb-2 py-4 w-full backdrop-blur-sm text-3xl font-semibold text-white md:text-4xl">Projects</h1>
-        <Projects />
-      </section>
-
-      <!-- video fish -->
-      <!-- <div class="mb-3">
-        <div class="pr-4 py-1.5 w-full" :class="isFooter ? 'flex justify-end' : 'flex justify-between'">
-          <p v-if="!isFooter" class="text-left text-sm font-medium">
-            Click arrow
-          </p>
-          <span @click="isFooter = !isFooter" v-if="!isFooter">
-            <img class="h-5 w-5" src="./public/svg/up-arrow.svg" alt="up arrow" />
-          </span>
-          <span @click="isFooter = !isFooter" v-else>
-            <img class="h-5 w-5" src="./public/svg/down-arrow.svg" alt="down arrow" />
-          </span>
-        </div>
-        <span v-if="isFooter">
-          <Footer />
-        </span>
-      </div> -->
-      <!-- <section id="connect" class="mt-28 mb-5 md:my-20">
-        <h1 :class="isSticky ? 'sticky z-10 top-0 inline-block' : ''" class="mb-2 py-4 w-full backdrop-blur-sm text-center text-3xl font-semibold text-white">Connect With Me</h1>
-        <Footer />
-      </section> -->
-      <!-- addition -->
-      <Additional />
+  <div>
+    <div class="mb-10" v-for="experience in experiences" :key="experience">
+      <header class="text-white font-bold text-xl">{{ experience.position }}</header>
+      <h2 class="text-white">{{ experience.place }}</h2>
+      <h3 class="text-white text-sm mb-2.5">{{ experience.since }}</h3>
+      <p>
+        {{ experience.content }}
+      </p>
+      <span class="mt-2 flex flex-row gap-x-2 overflow-auto">
+        <!-- <p v-for="language in experience.language" :key="language" class="bg-gray-900 px-2 py-3 text-white rounded-md">{{ language }}</p> -->
+        <Icon class="w-6 h-6" v-for="language in experience.languages" :key="language" :name="`${language}`" />
+      </span>
     </div>
-    <img class="h-[15%] w-[15%] md:w-[5%] md:h-[5%]" src="./public/video/chip-unscreen.gif" alt="cip" />
-    <!-- <svg class="fill-white" width="150" height="150">
-      <defs>
-        <path id="path" d="M 15, 75 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0" />
-      </defs>
-
-      <image href="./public/video/chip-unscreen.gif" x="45" y="45" height="60px" width="60px" />
-
-      <text font-size="15">
-        <textPath xlink:href="#path">Teks Mengelilingi GIF</textPath>
-      </text>
-    </svg> -->
+    <div v-for="exps in all" :key="exps">
+      <p>programming tools that I use</p>
+      <!-- <p v-for="language in exp.language" :key="language" class="bg-gray-900 px-2 py-3 text-white rounded-md">{{ language }}</p> -->
+      <div class="flex flex-nowrap overflow-auto">
+        <span class="mx-10 gap-x-2 px-2 py-1 flex items-center" v-for="language in exps.languages" :key="language">
+          <Icon class="bg-blue-700 w-6 h-6" v-for="icon in language" :key="icon" :name="`${icon}`" />
+          <!-- <p v-for="paragraph in exp.paragraphs" :key="paragraph">{{ paragraph }}</p> -->
+        </span>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
-  const title = ref("Matin's Portfolio");
-
-  // function handleRightClick() {
-  //   document.addEventListener('contextmenu', event => event.preventDefault());
-  // }
+  const experiences = ref([
+    {
+      since: '2021 — Present',
+      position: 'Student at vocational school',
+      content:
+        'Learning about basic concepts, syntax, and logic of programming languages such as PHP, Java, JavaScript, and others. Also learned about how to apply these programming languages to create applications, web and other projects. I hope that by studying at this vocational school, I can develop my potential and interest in the field of programming.',
+      languages: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'logos:javascript', 'logos:php', 'logos:laravel', 'logos:java', 'logos:flutter'],
+      // language: ['HTML', 'CSS', 'JavaScript', 'PHP', 'Laravel', 'Flutter', 'Java'],
+    },
+    {
+      since: 'Jan — Apr 2023',
+      position: 'Internship Frond-End Developer',
+      place: 'PT Redbuzz Mediatama',
+      content: 'Learned how to properly use several libraries and frameworks such as jQuery Vue, Nuxt, Bootstrap for Front-End developers.',
+      languages: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'logos:javascript', 'logos:jquery', 'logos:bootstrap', 'logos:vue', 'logos:nuxt-icon'],
+      // language: ['HTML', 'CSS', 'JavaScript', 'Jquery', 'Bootstrap', 'Vue', 'Nuxt'],
+    },
+  ]);
+  const all = ref([
+    {
+      languages: {
+        ['vscode-icons:file-type-html', 'HTML'],
+        ['vscode-icons:file-type-css', 'CSS'],
+        ['logos:javascript', 'JavaScript'],
+        ['logos:bootstrap', 'Bootstrap'],
+        ['logos:tailwindcss-icon', 'TailwindCSS'],
+        ['logos:vue', 'Vue'],
+        ['logos:nuxt-icon', 'Nuxt'],
+        ['logos:php', 'PHP'],
+        ['logos:laravel', 'Lavavel'],
+      },
+      // paragraphs: ['HTML', 'CSS', 'Javascript', 'Bootstrap', 'Vue', 'Nuxt', 'PHP', 'Laravel'],
+      // language: ['HTML', 'CSS', 'JavaScript', 'Jquery', 'Bootstrap', 'Vue', 'Nuxt'],
+    },
+  ]);
 </script>
-
-<!-- <template>
-  @click.right="handleRightClick()"
-  <div class="bg-black text-text font-helvetica">
-    <Head>
-      ini merupakan cara menambahkan head pada Nuxt
-      <Html lang="en" />
-      <Title>{{ title }}</Title>
-      <Meta name="description" :content="title" />
-    </Head>
-    <div class="pt-10 px-5 md:mx-auto md:pt-10 md:pb-5 md:max-w-md lg:p-0 lg:mx-5 lg:grid lg:grid-cols-2 lg:max-w-full overflow-auto lg:h-screen">
-      <div class="inline-block">
-        <section id="name" class="flex items-center h-[100dvh]">
-          <Name />
-        </section>
-      </div>
-      <div class="lg:overflow-auto scrollbar-hide">
-        <section id="about" class="my-24 sticky z-10 top-0 inline-block mb-2 py-4 w-full backdrop-blur-sm">
-          <h1 class="text-3xl font-semibold text-white md:text-4xl">About Me</h1>
-          <About />
-        </section>
-        <section id="experience" class="my-24">
-          <h1 class="sticky inline-block mb-2 py-4 w-full backdrop-blur-sm text-3xl font-semibold text-white md:text-4xl">Experience</h1>
-          <Experiences />
-        </section>
-        <section id="achievement" class="my-24">
-          <h1 class="sticky top-0 inline-block mb-2 py-4 w-full backdrop-blur-sm text-3xl font-semibold text-white md:text-4xl">Achievement</h1>
-          <Achievements />
-        </section>
-        <section id="project" class="mt-24">
-          <h1 class="sticky z-10 top-0 inline-block mb-2 py-4 w-full backdrop-blur-sm text-3xl font-semibold text-white md:text-4xl">Projects</h1>
-          <Projects />
-        </section>
-        <div class="mb-3">
-          <div class="pr-4 py-1.5 w-full" :class="isFooter ? 'flex justify-end' : 'flex justify-between'">
-          <p v-if="!isFooter" class="text-left text-sm font-medium">
-            Click arrow
-          </p>
-          <span @click="isFooter = !isFooter" v-if="!isFooter">
-            <img class="h-5 w-5" src="./public/svg/up-arrow.svg" alt="up arrow" />
-          </span>
-          <span @click="isFooter = !isFooter" v-else>
-            <img class="h-5 w-5" src="./public/svg/down-arrow.svg" alt="down arrow" />
-          </span>
-        </div>
-        <span v-if="isFooter">
-          <Footer />
-        </span>
-      </div>
-        <section id="connect" class="mt-28 mb-5 md:my-20">
-        <h1 :class="sticky z-10 top-0 inline-blockmb-2 py-4 w-full backdrop-blur-sm text-center text-3xl font-semibold text-white">Connect With Me</h1>
-        <Footer />
-      </section>
-        <Additional />
-        <img class="hidden lg:block h-[7%] w-[7%]" src="./public/video/chip-unscreen.gif" alt="cip" />
-      </div>
-    </div>
-    <img class="lg:hidden h-[15%] w-[15%] md:w-[5%] md:h-[5%]" src="./public/video/chip-unscreen.gif" alt="cip" />
-  </div>
-</template>
-
-<script setup>
-  const title = ref("Matin's Portfolio");
-
-  function handleRightClick() {
-    document.addEventListener('contextmenu', event => event.preventDefault());
-  }
-</script> -->

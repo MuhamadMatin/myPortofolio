@@ -5,7 +5,7 @@
     <h3 class="my-0.5">{{ achievement.header }}</h3>
     <NuxtLink class="flex justify-items-center group" :to="`${achievement.url}`" target="blank">
       <h4 class="group-hover:text-teal-500 duration-200">Credential {{ achievement.credential }}</h4>
-      <Icon class="inline-block h-5 w-5 group-hover:text-teal-500 group-hover:translate-x-1 group-hover:-translate-y-1 duration-200" name="heroicons:arrow-up-right" />
+      <Icon class="inline-block h-5 w-5 group-hover:text-teal-500 group-hover:translate-x-1 group-hover:-translate-y-1 duration-200" name="tabler:arrow-up-right" />
       <!-- <NuxtImg  loading="lazy" src="../public/svg/arrow-up-right.svg" /> -->
     </NuxtLink>
   </div>
