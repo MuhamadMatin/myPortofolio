@@ -1,6 +1,6 @@
 <template>
   <div class="border-t-2 pt-4 mb-12" v-for="project in projects" :key="project">
-    <NuxtImg class="h-full w-full rounded-md" loading="lazy" :src="`./images/${project.image}`" alt="image project" />
+    <NuxtImg class="h-full w-full rounded-md" loading="lazy" :src="`images/${project.image}`" alt="image project" />
     <div>
       <h1 class="mt-2 w-fit text-xl md:mt-2.5 md:text-2xl text-white font-semibold hover:text-teal-300 duration-200">
         {{ project.name }}
@@ -17,7 +17,7 @@
                 <svg class="absolute left-0 rotate-180 bottom-full h-2 w-full" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon points="0,0 127.5,127.5 255,0" /></svg>
               </div>
             </div> -->
-            <NuxtImg loading="lazy" class="w-6 h-6" :src="`./svg/${svg}`" alt="svg image" />
+            <NuxtImg loading="lazy" class="w-6 h-6" :src="`svg/${svg}`" alt="svg image" />
             <p>{{ svg.replace('.svg', '') }}</p>
             <!-- <Icon class="w-7 h-7" :name="`${svg}`" /> -->
           </span>
@@ -27,7 +27,7 @@
             :to="`${project.URL}`"
             target="blank"
             class="mt-2 py-2 flex items-center gap-x-2 group bg-gray-900 text-sm duration-100 font-medium rounded-full text-gray-400 border-0 w-fit md:py-2.5 px-4 md:px-5 hover:text-white hover:bg-gray-800">
-            <span class="inline-block duration-100 group-hover:-translate-y-1 group-hover:translate-x-1"><NuxtImg loading="lazy" class="h-4 w-4" :src="`./svg/rocket.svg`" alt="rocket svg" /></span> Click rocket
+            <span class="inline-block duration-100 group-hover:-translate-y-1 group-hover:translate-x-1"><NuxtImg loading="lazy" class="h-4 w-4" :src="`svg/rocket.svg`" alt="rocket svg" /></span> Click rocket
           </NuxtLink>
         </span>
       </div>
