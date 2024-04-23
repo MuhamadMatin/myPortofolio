@@ -39,7 +39,7 @@
       name: 'Alibaba Cloud Certification',
       credential: 'ACCD0119700100008897',
       giver: 'Alibaba Cloud',
-      url: 'undefined',
+      url: 'null',
     },
     {
       header: 'September 2023 — September 2025',
