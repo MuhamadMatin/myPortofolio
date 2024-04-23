@@ -9,7 +9,7 @@
       </p>
       <div class="mt-2 flex flex-wrap gap-3">
         <span class="flex items-center flex-row gap-x-1 py-2 md:py-2 px-4 md:px-5 bg-gray-900 text-sm duration-100 font-medium rounded-full hover:text-white hover:bg-gray-800" v-for="icon in experience.languages" :key="icon">
-          <NuxtImg class="h-6 w-6" :src="`svg/${icon}`" alt="icon svg"/>
+          <NuxtImg class="h-6 w-6" :src="`./svg/${icon}`" alt="icon svg"/>
           <p>{{ icon.replace('.svg', '') }}</p>
         </span>
         <!-- <p v-for="language in experience.language" :key="language" class="bg-gray-900 px-2 py-3 text-white rounded-md">{{ language }}</p> -->
@@ -21,7 +21,7 @@
       <!-- <p v-for="language in exp.language" :key="language" class="bg-gray-900 px-2 py-3 text-white rounded-md">{{ language }}</p> -->
       <div class="mt-3 flex flex-wrap gap-3">
         <span class="flex items-center flex-row gap-x-1 py-2 md:py-2 px-4 md:px-5 bg-gray-900 text-sm duration-100 font-medium rounded-full hover:text-white hover:bg-gray-800" v-for="icon in exps.languages.icons" :key="icon">
-          <NuxtImg class="h-6 w-6" :src="`svg/${icon}`" alt="icon svg"/>
+          <NuxtImg class="h-6 w-6" :src="`./svg/${icon}`" alt="icon svg"/>
           <p>{{ icon.replace('.svg', '') }}</p>
         </span>
       </div>
