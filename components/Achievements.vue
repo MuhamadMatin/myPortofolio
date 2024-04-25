@@ -36,7 +36,7 @@
     },
     {
       header: 'March 2024 — March 2027',
-      name: 'Alibaba Cloud Certification',
+      name: 'Certified Developer',
       credential: 'ACCD0119700100008897',
       giver: 'Alibaba Cloud',
       url: 'https://google.com/search?q=file+not+found',
