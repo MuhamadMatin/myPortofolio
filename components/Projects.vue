@@ -1,5 +1,5 @@
 <template>
-  <div class="border-t-2 pt-4 mb-12" v-for="project in projects" :key="project">
+  <div class="mb-12" v-for="project in projects" :key="project">
     <NuxtImg class="h-full w-full rounded-md" loading="lazy" :src="`/images/${project.image}`" alt="image project" />
     <div>
       <h1 class="mt-2 w-fit text-xl md:mt-2.5 md:text-2xl text-white font-semibold hover:text-teal-300 duration-200">
@@ -8,9 +8,9 @@
       <p class="text-sm md:text-base">
         {{ project.desk }}
       </p>
-      <div class="mt-1">
-        <span class="flex space-x-2 relative">
-          <span class="group flex items-center flex-row gap-x-1 py-2 md:py-2 px-4 md:px-5 bg-gray-900 text-sm duration-100 font-medium rounded-full hover:text-white hover:bg-gray-800" v-for="svg in project.svg" :key="svg">
+      <div class="mt-1 lg:flex lg:justify-between">
+        <span class="flex justify-start space-x-2">
+          <span class="group flex items-center flex-row gap-x-1 py-2 md:py-2 px-4 md:px-5 bg-gray-900 text-sm duration-100 font-medium rounded-full hover:text-white hover:bg-gray-800 cursor-pointer" v-for="svg in project.svg" :key="svg">
             <!-- <div class="absolute z-10 -bottom-[calc(100%+0.5rem)] left-1/2 -translate-x-1/2 hidden group-hover:block w-auto">
               <div class="bottom-full right-0 rounded-md bg-gray-900 px-4 py-1 text-xs text-white whitespace-nowrap">
                 {{ svg.replace('.svg', '').replace(/-/, ' ') }}
@@ -22,11 +22,11 @@
             <!-- <Icon class="w-7 h-7" :name="`${svg}`" /> -->
           </span>
         </span>
-        <span class="flex justify-end justify-items-end">
+        <span class="flex justify-end">
           <NuxtLink
             :to="`${project.URL}`"
             target="blank"
-            class="mt-2 py-2 flex items-center gap-x-2 group bg-gray-900 text-sm duration-100 font-medium rounded-full text-gray-400 border-0 w-fit md:py-2.5 px-4 md:px-5 hover:text-white hover:bg-gray-800">
+            class="mt-2 py-2 group flex items-center flex-row gap-x-1 bg-gray-900 text-sm duration-100 font-medium rounded-full md:py-2 px-4 md:px-5 lg:mt-0 hover:text-white hover:bg-gray-800 cursor-pointer">
             <span class="inline-block duration-100 group-hover:-translate-y-1 group-hover:translate-x-1"><img loading="lazy" class="h-4 w-4" :src="`/svg/rocket.svg`" alt="rocket svg" /></span> Click rocket
           </NuxtLink>
         </span>
