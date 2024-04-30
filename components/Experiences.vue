@@ -38,7 +38,7 @@
       content:
         'Learning about basic concepts, syntax, and logic of programming languages such as PHP, Java, JavaScript, and others. Also learned about how to apply these programming languages to create applications, web and other projects. I hope that by studying at this vocational school, I can develop my potential and interest in the field of programming.',
       // languages: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'logos:javascript', 'logos:php', 'logos:laravel', 'logos:java', 'logos:flutter'],
-      languages: ['HTML.svg', 'CSS.svg', 'JavaScript.svg', 'PHP.svg', 'Laravel.svg', 'Java.svg', 'Flutter.svg'],
+      languages: ['HTML.svg', 'CSS.svg', 'JavaScript.svg', 'PHP.svg', 'Laravel.svg', 'MySQL.svg', 'Java.svg', 'Flutter.svg'],
     },
     {
       since: 'Jan — Apr 2023',
@@ -52,7 +52,7 @@
   const all = ref([
     {
       languages: {
-        icons: ['HTML.svg', 'CSS.svg', 'Javascript.svg', 'Bootstrap.svg', 'TailwindCSS.svg', 'Vue.svg', 'Nuxt.svg', 'PHP.svg', 'Laravel.svg', 'VSCode.svg'],
+        icons: ['HTML.svg', 'CSS.svg', 'Javascript.svg', 'Bootstrap.svg', 'TailwindCSS.svg', 'Vue.svg', 'Nuxt.svg', 'PHP.svg', 'Laravel.svg', 'MySQL.svg', 'VSCode.svg'],
         // texts: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'TailwindCSS', 'Vue', 'Nuxt', 'PHP', 'Lavavel'],
       },
     },

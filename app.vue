@@ -66,8 +66,4 @@
 
 <script setup>
   const title = ref("Matin's Portfolio");
-
-  // function handleRightClick() {
-  //   document.addEventListener('contextmenu', event => event.preventDefault());
-  // }
 </script>
