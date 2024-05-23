@@ -1,11 +1,11 @@
 <template>
   <div class="mb-12" v-for="achievement in achievements" :key="achievement">
-    <h2 class="text-white font-bold">{{ achievement.name }}</h2>
+    <h2 class="font-bold text-white">{{ achievement.name }}</h2>
     <h3 class="my-0.5">{{ achievement.giver }}</h3>
     <h3 class="my-0.5">{{ achievement.header }}</h3>
-    <NuxtLink class="flex justify-items-center group" :to="`${achievement.url}`" target="blank">
-      <h4 class="group-hover:text-teal-500 duration-200">Credential {{ achievement.credential }}</h4>
-      <Icon class="inline-block h-5 w-5 group-hover:text-teal-500 group-hover:translate-x-1 group-hover:-translate-y-1 duration-200" name="tabler:arrow-up-right" />
+    <NuxtLink class="flex justify-items-center group" :to="`${achievement.url}`" :target="`${achievement.target}`">
+      <h4 class="duration-200 group-hover:text-teal-500">Credential {{ achievement.credential }}</h4>
+      <Icon class="inline-block w-5 h-5 duration-200 group-hover:text-teal-500 group-hover:translate-x-1 group-hover:-translate-y-1" name="tabler:arrow-up-right" />
       <!-- <NuxtImg  loading="lazy" src="../public/svg/arrow-up-right.svg" /> -->
     </NuxtLink>
   </div>
@@ -19,6 +19,7 @@
       credential: 'K7OU1VU',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/K7OU1VU',
+      target:'blank'
     },
     {
       header: 'April 2024 — April 2027',
@@ -26,6 +27,7 @@
       credential: 'RFTABOX',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/RFTABOX',
+      target:'blank'
     },
     {
       header: 'April 2024 — April 2027',
@@ -33,13 +35,15 @@
       credential: 'KIE3AKG',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/KIE3AKG',
+      target:'blank'
     },
     {
       header: 'March 2024 — March 2027',
       name: 'Certified Developer',
       credential: 'ACCD0119700100008897',
       giver: 'Alibaba Cloud',
-      url: 'https://google.com/search?q=file+not+found',
+      url: '404',
+      target:''
     },
     {
       header: 'September 2023 — September 2025',
@@ -47,6 +51,7 @@
       credential: 'JMZV12J5RXN9',
       giver: 'Dicoding Indonesia',
       url: 'https://www.dicoding.com/certificates/JMZV12J5RXN9',
+      target:'blank'
     },
     {
       header: 'August 2023 — August 2025',
@@ -54,6 +59,7 @@
       credential: '0LZ0983QNZ65',
       giver: 'Dicoding Indonesia',
       url: 'https://www.dicoding.com/certificates/0LZ0983QNZ65',
+      target:'blank'
     },
     {
       header: 'July 2023 — July 2025',
@@ -61,6 +67,7 @@
       credential: 'MRZMQO0O3PYQ',
       giver: 'Dicoding Indonesia',
       url: 'https://www.dicoding.com/certificates/MRZMQO0O3PYQ',
+      target:'blank'
     },
   ]);
 </script>
