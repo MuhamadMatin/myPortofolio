@@ -10,7 +10,7 @@
       <h1 class="mb-4 text-6xl font-bold">404</h1>
       <h2 class="text-2xl md:mb-0">File Not Found</h2>
     </span>
-    <NuxtLink to="/" class="px-4 py-2 text-white transition duration-300 ease-in-out delay-150 bg-teal-500 rounded-md hover:shadow-md hover:shadow-teal-500">Go back to homepage</NuxtLink>
+    <NuxtLink to="/" class="px-4 py-2 text-white transition duration-300 ease-in-out bg-teal-500 rounded-md hover:shadow-md hover:shadow-teal-500">Go back to homepage</NuxtLink>
   </div>
 </template>
 
