@@ -14,6 +14,14 @@
 <script setup>
   const achievements = ref([
     {
+      header: 'Mei 2024 — Mei 2027',
+      name: 'Belajar JavaScript',
+      credential: 'B9TTI3Z',
+      giver: 'Codepolitan',
+      url: 'https://codepolitan.com/c/B9TTI3Z',
+      target:'blank'
+    },
+    {
       header: 'April 2024 — April 2027',
       name: 'Belajar Bootstrap CSS Framework',
       credential: 'K7OU1VU',
@@ -39,7 +47,7 @@
     },
     {
       header: 'March 2024 — March 2027',
-      name: 'Certified Developer',
+      name: 'Developer Clouder',
       credential: 'ACCD0119700100008897',
       giver: 'Alibaba Cloud',
       url: '404',
