@@ -57,7 +57,7 @@
       header: 'September 2023 — September 2025',
       name: 'Belajar Dasar Visualisasi Data',
       credential: 'JMZV12J5RXN9',
-      giver: 'Dicoding Indonesia',
+      giver: 'Dicoding',
       url: 'https://www.dicoding.com/certificates/JMZV12J5RXN9',
       target:'blank'
     },
@@ -65,7 +65,7 @@
       header: 'August 2023 — August 2025',
       name: 'Pengenalan Ke Logika Pemrograman (Progamming Logic 101)',
       credential: '0LZ0983QNZ65',
-      giver: 'Dicoding Indonesia',
+      giver: 'Dicoding',
       url: 'https://www.dicoding.com/certificates/0LZ0983QNZ65',
       target:'blank'
     },
@@ -73,7 +73,7 @@
       header: 'July 2023 — July 2025',
       name: 'Memulai Dasar Pemrograman Untuk Menjadi Pengembang Software',
       credential: 'MRZMQO0O3PYQ',
-      giver: 'Dicoding Indonesia',
+      giver: 'Dicoding',
       url: 'https://www.dicoding.com/certificates/MRZMQO0O3PYQ',
       target:'blank'
     },
