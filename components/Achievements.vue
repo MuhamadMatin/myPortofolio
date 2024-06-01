@@ -15,6 +15,22 @@
   const achievements = ref([
     {
       header: 'Mei 2024 — Mei 2027',
+      name: 'Belajar AJAX dan Web API ',
+      credential: 'PCZ3FB0',
+      giver: 'Codepolitan',
+      url: 'https://codepolitan.com/c/PCZ3FB0',
+      target:'blank'
+    },
+    {
+      header: 'Mei 2024 — Mei 2027',
+      name: 'Belajar JavaScript DOM',
+      credential: 'ZWTUJWV',
+      giver: 'Codepolitan',
+      url: 'https://codepolitan.com/c/ZWTUJWV',
+      target:'blank'
+    },
+    {
+      header: 'Mei 2024 — Mei 2027',
       name: 'Belajar JavaScript',
       credential: 'B9TTI3Z',
       giver: 'Codepolitan',
