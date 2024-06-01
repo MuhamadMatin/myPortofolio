@@ -32,7 +32,7 @@
 <script setup>
   const experiences = ref([
     {
-      since: '2021 — Present',
+      since: 'Jun 2021 — Jun 2024',
       position: 'Student at vocational school',
       place: 'SMK 17 Agustus 1945 Surabaya',
       content:
@@ -41,7 +41,7 @@
       languages: ['HTML.svg', 'CSS.svg', 'JavaScript.svg', 'PHP.svg', 'Laravel.svg', 'MySQL.svg', 'Java.svg', 'Flutter.svg'],
     },
     {
-      since: 'Jan — Apr 2023',
+      since: 'Jan 2023 — Apr 2023',
       position: 'Internship Frond-End Developer',
       place: 'PT Redbuzz Mediatama',
       content: 'Learned how to properly use several libraries and frameworks such as jQuery Vue, Nuxt, Bootstrap for Front-End developers.',
