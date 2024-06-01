@@ -1,27 +1,27 @@
 <template>
   <div>
     <div class="mb-10" v-for="experience in experiences" :key="experience">
-      <header class="text-white font-bold text-xl">{{ experience.position }}</header>
+      <header class="text-xl font-bold text-white">{{ experience.position }}</header>
       <h2 class="text-white">{{ experience.place }}</h2>
-      <h3 class="text-white text-sm">{{ experience.since }}</h3>
+      <h3 class="text-sm text-white">{{ experience.since }}</h3>
       <p class="my-3 lg:my-2.5">
         {{ experience.content }}
       </p>
-      <div class="mt-2 flex flex-wrap gap-3">
-        <span class="flex items-center flex-row gap-x-1 py-2 md:py-2 px-4 md:px-5 bg-gray-900 text-sm duration-100 font-medium rounded-full hover:text-white hover:bg-gray-800 cursor-pointer" v-for="icon in experience.languages" :key="icon">
-          <img loading="lazy" class="h-6 w-6" :src="`svg/${icon}`" alt="icon svg" />
+      <div class="flex flex-wrap gap-3 mt-2">
+        <span class="flex flex-row items-center px-4 py-2 text-sm font-medium duration-100 bg-gray-900 rounded-full cursor-pointer gap-x-1 md:py-2 md:px-5 hover:text-white hover:bg-gray-800" v-for="icon in experience.languages" :key="icon">
+          <img loading="lazy" class="w-6 h-6" :src="`svg/${icon}`" alt="icon svg" />
           <p>{{ icon.replace('.svg', '') }}</p>
         </span>
-        <!-- <p v-for="language in experience.language" :key="language" class="bg-gray-900 px-2 py-3 text-white rounded-md">{{ language }}</p> -->
+        <!-- <p v-for="language in experience.language" :key="language" class="px-2 py-3 text-white bg-gray-900 rounded-md">{{ language }}</p> -->
         <!-- <Icon class="w-6 h-6" v-for="language in experience.languages" :key="language" :name="`${language}`" /> -->
       </div>
     </div>
     <div v-for="exps in all" :key="exps">
-      <p>Programming tools that I use</p>
-      <!-- <p v-for="language in exp.language" :key="language" class="bg-gray-900 px-2 py-3 text-white rounded-md">{{ language }}</p> -->
-      <div class="mt-3 flex flex-wrap gap-3">
-        <span class="flex items-center flex-row gap-x-1 py-2 md:py-2 px-4 md:px-5 bg-gray-900 text-sm duration-100 font-medium rounded-full hover:text-white hover:bg-gray-800 cursor-pointer" v-for="icon in exps.languages.icons" :key="icon">
-          <img loading="lazy" class="h-6 w-6" :src="`svg/${icon}`" alt="icon svg" />
+      <p>What do I use to build websites</p>
+      <!-- <p v-for="language in exp.language" :key="language" class="px-2 py-3 text-white bg-gray-900 rounded-md">{{ language }}</p> -->
+      <div class="flex flex-wrap gap-3 mt-3">
+        <span class="flex flex-row items-center px-4 py-2 text-sm font-medium duration-100 bg-gray-900 rounded-full cursor-pointer gap-x-1 md:py-2 md:px-5 hover:text-white hover:bg-gray-800" v-for="icon in exps.languages.icons" :key="icon">
+          <img loading="lazy" class="w-6 h-6" :src="`svg/${icon}`" alt="icon svg" />
           <p>{{ icon.replace('.svg', '') }}</p>
         </span>
       </div>
