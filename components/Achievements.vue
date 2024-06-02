@@ -14,7 +14,7 @@
 <script setup>
   const achievements = ref([
     {
-      header: 'Mei 2024 — Mei 2027',
+      header: 'Jun 2024 — Jun 2027',
       name: 'Belajar AJAX dan Web API ',
       credential: 'PCZ3FB0',
       giver: 'Codepolitan',
