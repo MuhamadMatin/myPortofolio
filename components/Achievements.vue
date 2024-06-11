@@ -15,7 +15,15 @@
   const achievements = ref([
     {
       header: 'Jun 2024 — Jun 2027',
-      name: 'Belajar AJAX dan Web API ',
+      name: 'Belajar VueJS 3',
+      credential: '1WENAIV',
+      giver: 'Codepolitan',
+      url: 'https://codepolitan.com/c/1WENAIV',
+      target:'blank'
+    },
+    {
+      header: 'Jun 2024 — Jun 2027',
+      name: 'Belajar AJAX dan Web API',
       credential: 'PCZ3FB0',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/PCZ3FB0',
