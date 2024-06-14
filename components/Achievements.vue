@@ -15,6 +15,14 @@
   const achievements = ref([
     {
       header: 'Jun 2024 — Jun 2027',
+      name: 'Belajar Dasar Express.js',
+      credential: '84CTEYF',
+      giver: 'Codepolitan',
+      url: 'https://codepolitan.com/c/84CTEYF',
+      target:'blank'
+    },
+    {
+      header: 'Jun 2024 — Jun 2027',
       name: 'Belajar Dasar Node.js dan NPM',
       credential: 'H2QTNAW',
       giver: 'Codepolitan',
