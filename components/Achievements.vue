@@ -15,6 +15,14 @@
   const achievements = ref([
     {
       header: 'Jun 2024 — Jun 2027',
+      name: 'Belajar RESTful dengan Express.js',
+      credential: 'PNFDGTU',
+      giver: 'Codepolitan',
+      url: 'https://codepolitan.com/c/PNFDGTU',
+      target:'blank'
+    },
+    {
+      header: 'Jun 2024 — Jun 2027',
       name: 'Belajar Dasar Express.js',
       credential: '84CTEYF',
       giver: 'Codepolitan',
