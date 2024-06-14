@@ -15,6 +15,14 @@
   const achievements = ref([
     {
       header: 'Jun 2024 — Jun 2027',
+      name: 'Belajar Dasar Node.js dan NPM',
+      credential: 'H2QTNAW',
+      giver: 'Codepolitan',
+      url: 'https://codepolitan.com/c/H2QTNAW',
+      target:'blank'
+    },
+    {
+      header: 'Jun 2024 — Jun 2027',
       name: 'Belajar VueJS 3',
       credential: '1WENAIV',
       giver: 'Codepolitan',
