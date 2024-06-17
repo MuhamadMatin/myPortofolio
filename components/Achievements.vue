@@ -15,11 +15,27 @@
   const achievements = ref([
     {
       header: 'Jun 2024 — Jun 2027',
+      name: 'Belajar MongoDB',
+      credential: 'C6DXHNW',
+      giver: 'Codepolitan',
+      url: 'https://codepolitan.com/c/C6DXHNW',
+      target: 'blank',
+    },
+    {
+      header: 'Jun 2024 — Jun 2027',
+      name: 'Belajar GIT Untuk Progammer Pemula',
+      credential: 'GL3453805332',
+      giver: 'Gamelab Indonesia',
+      url: 'https://gamelab.id/certificate/GL3453805332',
+      target: 'blank',
+    },
+    {
+      header: 'Jun 2024 — Jun 2027',
       name: 'Belajar RESTful dengan Express.js',
       credential: 'PNFDGTU',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/PNFDGTU',
-      target:'blank'
+      target: 'blank',
     },
     {
       header: 'Jun 2024 — Jun 2027',
@@ -27,7 +43,7 @@
       credential: '84CTEYF',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/84CTEYF',
-      target:'blank'
+      target: 'blank',
     },
     {
       header: 'Jun 2024 — Jun 2027',
@@ -35,7 +51,7 @@
       credential: 'H2QTNAW',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/H2QTNAW',
-      target:'blank'
+      target: 'blank',
     },
     {
       header: 'Jun 2024 — Jun 2027',
@@ -43,7 +59,7 @@
       credential: '1WENAIV',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/1WENAIV',
-      target:'blank'
+      target: 'blank',
     },
     {
       header: 'Jun 2024 — Jun 2027',
@@ -51,7 +67,7 @@
       credential: 'PCZ3FB0',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/PCZ3FB0',
-      target:'blank'
+      target: 'blank',
     },
     {
       header: 'Mei 2024 — Mei 2027',
@@ -59,7 +75,7 @@
       credential: 'ZWTUJWV',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/ZWTUJWV',
-      target:'blank'
+      target: 'blank',
     },
     {
       header: 'Mei 2024 — Mei 2027',
@@ -67,7 +83,7 @@
       credential: 'B9TTI3Z',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/B9TTI3Z',
-      target:'blank'
+      target: 'blank',
     },
     {
       header: 'April 2024 — April 2027',
@@ -75,7 +91,7 @@
       credential: 'K7OU1VU',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/K7OU1VU',
-      target:'blank'
+      target: 'blank',
     },
     {
       header: 'April 2024 — April 2027',
@@ -83,7 +99,7 @@
       credential: 'RFTABOX',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/RFTABOX',
-      target:'blank'
+      target: 'blank',
     },
     {
       header: 'April 2024 — April 2027',
@@ -91,7 +107,7 @@
       credential: 'KIE3AKG',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/KIE3AKG',
-      target:'blank'
+      target: 'blank',
     },
     {
       header: 'March 2024 — March 2027',
@@ -99,7 +115,7 @@
       credential: 'ACCD0119700100008897',
       giver: 'Alibaba Cloud',
       url: '404',
-      target:''
+      target: '',
     },
     {
       header: 'September 2023 — September 2025',
@@ -107,7 +123,7 @@
       credential: 'JMZV12J5RXN9',
       giver: 'Dicoding',
       url: 'https://www.dicoding.com/certificates/JMZV12J5RXN9',
-      target:'blank'
+      target: 'blank',
     },
     {
       header: 'August 2023 — August 2025',
@@ -115,7 +131,7 @@
       credential: '0LZ0983QNZ65',
       giver: 'Dicoding',
       url: 'https://www.dicoding.com/certificates/0LZ0983QNZ65',
-      target:'blank'
+      target: 'blank',
     },
     {
       header: 'July 2023 — July 2025',
@@ -123,7 +139,7 @@
       credential: 'MRZMQO0O3PYQ',
       giver: 'Dicoding',
       url: 'https://www.dicoding.com/certificates/MRZMQO0O3PYQ',
-      target:'blank'
+      target: 'blank',
     },
   ]);
 </script>
