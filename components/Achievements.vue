@@ -15,6 +15,30 @@
   const achievements = ref([
     {
       header: 'Jun 2024 — Jun 2027',
+      name: 'Implementasi Relasi Database MongoDB di Express, Mongoose',
+      credential: 'C6DXHNW',
+      giver: 'HDH1S8L',
+      url: 'https://codepolitan.com/c/HDH1S8L',
+      target: 'blank',
+    },
+    {
+      header: 'Jun 2024 — Jun 2027',
+      name: 'Belajar Relasi Data di MongoDB (Database Relationship)',
+      credential: 'C6DXHNW',
+      giver: 'OLKON7Z',
+      url: 'https://codepolitan.com/c/OLKON7Z',
+      target: 'blank',
+    },
+    {
+      header: 'Jun 2024 — Jun 2027',
+      name: 'Belajar Menggunakan MongoDB di JavaScript',
+      credential: 'C6DXHNW',
+      giver: 'YAUX6CC',
+      url: 'https://codepolitan.com/c/YAUX6CC',
+      target: 'blank',
+    },
+    {
+      header: 'Jun 2024 — Jun 2027',
       name: 'Belajar MongoDB',
       credential: 'C6DXHNW',
       giver: 'Codepolitan',
