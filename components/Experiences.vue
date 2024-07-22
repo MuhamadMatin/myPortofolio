@@ -32,6 +32,15 @@
 <script setup>
   const experiences = ref([
     {
+      since: 'Jul 2024 — Present',
+      position: 'Full Stack Developer',
+      place: 'Samagaha Creative Digital',
+      content:
+        '',
+      // languages: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'logos:javascript', 'logos:php', 'logos:laravel', 'logos:java', 'logos:flutter'],
+      languages: ['Laravel.svg', 'MySQL.svg'],
+    },
+    {
       since: 'Jun 2021 — Jun 2024',
       position: 'Student at vocational school',
       place: 'SMK 17 Agustus 1945 Surabaya',
