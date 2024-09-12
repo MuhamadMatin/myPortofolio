@@ -17,7 +17,7 @@
       </div>
     </div>
     <div v-for="exps in all" :key="exps">
-      <p>What do I use to build websites</p>
+      <p>What do I use to build client websites</p>
       <!-- <p v-for="language in exp.language" :key="language" class="px-2 py-3 text-white bg-gray-900 rounded-md">{{ language }}</p> -->
       <div class="flex flex-wrap gap-3 mt-3">
         <span class="flex flex-row items-center px-4 py-2 text-sm font-medium duration-100 bg-gray-900 rounded-full cursor-pointer gap-x-1 md:py-2 md:px-5 hover:text-white hover:bg-gray-800" v-for="icon in exps.languages.icons" :key="icon">
@@ -60,7 +60,7 @@
   const all = ref([
     {
       languages: {
-        icons: ['HTML.svg', 'CSS.svg', 'Javascript.svg', 'Bootstrap.svg', 'TailwindCSS.svg', 'Vue.svg', 'Nuxt.svg', 'PHP.svg', 'Laravel.svg', 'MySQL.svg', 'VSCode.svg'],
+        icons: ['Vue.svg', 'Nuxt.svg', 'Bootstrap.svg', 'TailwindCSS.svg', 'PHP.svg', 'Laravel.svg', 'MySQL.svg', 'DBeaver.svg', 'VSCode.svg'],
         // texts: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'TailwindCSS', 'Vue', 'Nuxt', 'PHP', 'Lavavel'],
       },
     },
