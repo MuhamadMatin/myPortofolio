@@ -35,8 +35,7 @@
       since: 'Jul 2024 — Present',
       position: 'Full Stack Developer',
       place: 'Samagaha Creative Digital',
-      content:
-        '',
+      content: 'practicing all the things I learned from vocational school and learning many new things such as FIlamentphp, Laravel Jetstream, Laravel Breeze, etc.',
       // languages: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'logos:javascript', 'logos:php', 'logos:laravel', 'logos:java', 'logos:flutter'],
       languages: ['Laravel.svg', 'MySQL.svg'],
     },
