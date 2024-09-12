@@ -63,10 +63,6 @@
   </div>
 </template>
 
-<script setup>
-  const title = ref('');
-</script>
-
 <script setup lang="ts">
   useSeoMeta({
     title: `Matin's Portfolio`,
