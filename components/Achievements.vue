@@ -14,10 +14,18 @@
 <script setup>
   const achievements = ref([
     {
+      header: 'Sep 2024',
+      name: 'Laravel 11, Breeze, Spatie: Bikin Web Platform Online Course',
+      credential: 'We0axe6tcu',
+      giver: 'BuildWithAngga',
+      url: 'https://codepolitan.com/c/HDH1S8L',
+      target: 'blank',
+    },
+    {
       header: 'Jun 2024 — Jun 2027',
       name: 'Implementasi Relasi Database MongoDB di Express, Mongoose',
       credential: 'C6DXHNW',
-      giver: 'HDH1S8L',
+      giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/HDH1S8L',
       target: 'blank',
     },
@@ -25,7 +33,7 @@
       header: 'Jun 2024 — Jun 2027',
       name: 'Belajar Relasi Data di MongoDB (Database Relationship)',
       credential: 'C6DXHNW',
-      giver: 'OLKON7Z',
+      giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/OLKON7Z',
       target: 'blank',
     },
@@ -33,7 +41,7 @@
       header: 'Jun 2024 — Jun 2027',
       name: 'Belajar Menggunakan MongoDB di JavaScript',
       credential: 'C6DXHNW',
-      giver: 'YAUX6CC',
+      giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/YAUX6CC',
       target: 'blank',
     },
