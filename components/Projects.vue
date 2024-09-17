@@ -2,33 +2,21 @@
   <div class="mb-12" v-for="project in projects" :key="project">
     <NuxtImg class="w-full h-full rounded-md" loading="lazy" :src="`/images/${project.image}`" alt="image project" />
     <div>
-      <h1 class="mt-2 w-fit text-xl md:mt-2.5 md:text-2xl text-white font-semibold transition-all hover:text-teal-300 duration-200">
-        {{ project.name }}
-      </h1>
+      <NuxtLink class="flex items-center mt-2 md:mt-2.5 space-x-2 w-fit group" :to="`${project.URL}`" target="blank">
+        <h1 class="text-xl font-semibold text-white transition-all duration-200 md:text-2xl group-hover:text-teal-300">
+          {{ project.name }}
+        </h1>
+        <span class="inline-block duration-100 group-hover:-translate-y-2 group-hover:translate-x-1">
+          <img loading="lazy" class="w-6 h-6" :src="`/svg/rocket.svg`" alt="rocket svg" />
+        </span>
+      </NuxtLink>
       <p class="text-sm md:text-base">
         {{ project.desk }}
       </p>
-      <div class="mt-1 lg:flex lg:justify-between">
-        <span class="flex justify-start space-x-2">
-          <span class="flex flex-row items-center px-4 py-2 text-sm font-medium duration-100 bg-gray-900 rounded-full cursor-pointer group gap-x-1 md:py-2 md:px-5 hover:text-white hover:bg-gray-800" v-for="svg in project.svg" :key="svg">
-            <!-- <div class="absolute z-10 -bottom-[calc(100%+0.5rem)] left-1/2 -translate-x-1/2 hidden group-hover:block w-auto">
-              <div class="right-0 px-4 py-1 text-xs text-white bg-gray-900 rounded-md bottom-full whitespace-nowrap">
-                {{ svg.replace('.svg', '').replace(/-/, ' ') }}
-                <svg class="absolute left-0 w-full h-2 rotate-180 bottom-full" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon points="0,0 127.5,127.5 255,0" /></svg>
-              </div>
-            </div> -->
-            <img loading="lazy" class="w-6 h-6" :src="`/svg/${svg}`" alt="svg image" />
-            <p>{{ svg.replace('.svg', '') }}</p>
-            <!-- <Icon class="w-7 h-7" :name="`${svg}`" /> -->
-          </span>
-        </span>
-        <span class="flex justify-end">
-          <NuxtLink
-            :to="`${project.URL}`"
-            target="blank"
-            class="flex flex-row items-center px-4 py-2 mt-2 text-sm font-medium duration-100 bg-gray-900 rounded-full cursor-pointer group gap-x-1 md:py-2 md:px-5 lg:mt-0 hover:text-white hover:bg-gray-800">
-            <span class="inline-block duration-100 group-hover:-translate-y-1 group-hover:translate-x-1"><img loading="lazy" class="w-4 h-4" :src="`/svg/rocket.svg`" alt="rocket svg" /></span> Click rocket
-          </NuxtLink>
+      <div class="flex flex-wrap gap-3 mt-2">
+        <span class="flex flex-row items-center px-4 py-2 text-sm font-medium duration-100 bg-gray-900 rounded-full cursor-pointer gap-x-1 md:py-2 md:px-5 hover:text-white hover:bg-gray-800" v-for="svg in project.svg" :key="svg">
+          <img loading="lazy" class="w-6 h-6" :src="`/svg/${svg}`" alt="icon svg" />
+          <p>{{ svg.replace('.svg', '') }}</p>
         </span>
       </div>
     </div>
@@ -37,6 +25,14 @@
 
 <script setup>
   const projects = ref([
+    {
+      name: 'Online courses Laravel 11',
+      desk: 'I built a Laravel 11 online course which comes from Build With Angga or BWA. However, I am currently facing a challenge as I need additional funds to host and fully deploy this Laravel project.',
+      image: 'course.webp',
+      // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
+      svg: ['Laravel.svg', 'DBeaver.svg', 'MySQL.svg', 'TailwindCSS.svg'],
+      URL: 'https://github.com/MuhamadMatin/BWAcourseLaravel',
+    },
     {
       name: 'Remake Image Search',
       desk: 'I rebuilt the Image Search website using the Pexel API. I used several Nuxt modules such as Nuxt Google-Font, Nuxt Security, Nuxt Image, and TailwindCSS to provide a new web experience than before. This project is part of my efforts to improve my skills in web development.',
