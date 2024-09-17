@@ -18,7 +18,7 @@
       name: 'Laravel 11, Breeze, Spatie: Bikin Web Platform Online Course',
       credential: 'We0axe6tcu',
       giver: 'BuildWithAngga',
-      url: 'https://codepolitan.com/c/HDH1S8L',
+      url: '404',
       target: 'blank',
     },
     {
