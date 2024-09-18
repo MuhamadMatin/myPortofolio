@@ -15,11 +15,19 @@
   const achievements = ref([
     {
       header: 'Sep 2024',
+      name: 'Full-Stack Web Development: Bikin Projek Ujian Online CBT',
+      credential: 'yc9v9inbwZ',
+      giver: 'BuildWithAngga',
+      url: '404',
+      target: '',
+    },
+    {
+      header: 'Sep 2024',
       name: 'Laravel 11, Breeze, Spatie: Bikin Web Platform Online Course',
       credential: 'We0axe6tcu',
       giver: 'BuildWithAngga',
       url: '404',
-      target: 'blank',
+      target: '',
     },
     {
       header: 'Jun 2024 — Jun 2027',

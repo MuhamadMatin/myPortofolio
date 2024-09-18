@@ -26,7 +26,15 @@
 <script setup>
   const projects = ref([
     {
-      name: 'Online courses Laravel 11',
+      name: 'Online Exam Laravel 11',
+      desk: 'I built a Laravel 11 online exam which comes from Build With Angga or BWA. However, I am currently facing a challenge as I need additional funds to host and fully deploy this Laravel project.',
+      image: 'exam.webp',
+      // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
+      svg: ['Laravel.svg', 'DBeaver.svg', 'MySQL.svg', 'TailwindCSS.svg'],
+      URL: 'https://github.com/MuhamadMatin/BWAexamLaravel',
+    },
+    {
+      name: 'Online Courses Laravel 11',
       desk: 'I built a Laravel 11 online course which comes from Build With Angga or BWA. However, I am currently facing a challenge as I need additional funds to host and fully deploy this Laravel project.',
       image: 'course.webp',
       // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
