@@ -1,8 +1,13 @@
+<script setup lang="ts">
+  import type { Title } from '#build/components';
+</script>
+
 <template>
   <Head>
     <!-- ini merupakan cara menambahkan head pada Nuxt -->
     <Html lang="en" />
     <!-- Google verification -->
+    <Title>Matin's Portfolio</Title>
     <Meta name="google-site-verification" content="6gucaetBogbZLPwhjxeSyVHzrCtMNq6mlzvHsaXtsUY" />
 
     <!-- Meta umum untuk SEO -->
