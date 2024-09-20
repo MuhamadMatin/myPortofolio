@@ -8,7 +8,7 @@
     <Html lang="en" />
     <!-- Google verification -->
     <Title>Matin's Portfolio</Title>
-    <Meta name="google-site-verification" content="6gucaetBogbZLPwhjxeSyVHzrCtMNq6mlzvHsaXtsUY" />
+    <Meta name="google-site-verification" content="ncQbs7NO4o7Kqbi52iJFLJwFkgho9AW43lM5F4YH694" />
 
     <!-- Meta umum untuk SEO -->
     <Meta name="description" content="Explore Matin's portfolio. This is the first portfolio website created using Nuxt.js, showcasing skills in web development." />
