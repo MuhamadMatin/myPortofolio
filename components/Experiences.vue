@@ -37,7 +37,7 @@
       place: 'Samagaha Creative Digital',
       content: 'practicing all the things I learned from vocational school and learning many new things such as FIlamentphp, Laravel Jetstream, Laravel Breeze, etc.',
       // languages: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'logos:javascript', 'logos:php', 'logos:laravel', 'logos:java', 'logos:flutter'],
-      languages: ['Laravel.svg', 'MySQL.svg', 'TailwindCSS.svg', 'DBeaver.svg'],
+      languages: ['Laravel.svg', 'MySQL.svg', 'TailwindCSS.svg', 'DBeaver.svg', 'Github.svg'],
     },
     {
       since: 'Jun 2021 — Jun 2024',
@@ -46,7 +46,7 @@
       content:
         'Learning about basic concepts, syntax, and logic of programming languages such as PHP, Java, JavaScript, and others. Also learned about how to apply these programming languages to create applications, web and other projects. I hope that by studying at this vocational school, I can develop my potential and interest in the field of programming.',
       // languages: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'logos:javascript', 'logos:php', 'logos:laravel', 'logos:java', 'logos:flutter'],
-      languages: ['HTML.svg', 'CSS.svg', 'JavaScript.svg', 'PHP.svg', 'Laravel.svg', 'MySQL.svg', 'Java.svg', 'Flutter.svg'],
+      languages: ['HTML.svg', 'CSS.svg', 'JavaScript.svg', 'PHP.svg', 'Laravel.svg', 'MySQL.svg', 'Java.svg', 'Flutter.svg', 'Github.svg'],
     },
     {
       since: 'Jan 2023 — Apr 2023',
@@ -54,13 +54,13 @@
       place: 'PT Redbuzz Mediatama',
       content: 'Learned how to properly use several libraries and frameworks such as jQuery Vue, Nuxt, Bootstrap for Front-End developers.',
       // languages: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'logos:javascript', 'logos:jquery', 'logos:bootstrap', 'logos:vue', 'logos:nuxt-icon'],
-      languages: ['HTML.svg', 'CSS.svg', 'JavaScript.svg', 'Jquery.svg', 'Bootstrap.svg', 'Vue.svg', 'Nuxt.svg'],
+      languages: ['HTML.svg', 'CSS.svg', 'JavaScript.svg', 'Jquery.svg', 'Bootstrap.svg', 'Vue.svg', 'Nuxt.svg', 'Gitlab.svg'],
     },
   ]);
   const all = ref([
     {
       languages: {
-        icons: ['Vue.svg', 'Nuxt.svg', 'Bootstrap.svg', 'TailwindCSS.svg', 'PHP.svg', 'Laravel.svg', 'MySQL.svg', 'DBeaver.svg', 'VSCode.svg'],
+        icons: ['Vue.svg', 'Nuxt.svg', 'Bootstrap.svg', 'TailwindCSS.svg', 'PHP.svg', 'Laravel.svg', 'MySQL.svg', 'DBeaver.svg', 'VSCode.svg', 'Github.svg'],
         // texts: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'TailwindCSS', 'Vue', 'Nuxt', 'PHP', 'Lavavel'],
       },
     },
