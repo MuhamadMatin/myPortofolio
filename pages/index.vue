@@ -1,11 +1,6 @@
 <template>
   <!-- @click.right="handleRightClick()" -->
   <div class="bg-black text-text font-helvetica">
-    <Head>
-      <!-- ini merupakan cara menambahkan head pada Nuxt -->
-      <Html lang="en" />
-      <Meta name="google-site-verification" content="6gucaetBogbZLPwhjxeSyVHzrCtMNq6mlzvHsaXtsUY" />
-    </Head>
     <div class="px-5 pt-10 mx-auto md:pt-10 md:pb-5 md:max-w-md lg:p-0 lg:px-5 lg:grid lg:grid-cols-2 lg:max-w-full lg:h-screen">
       <div class="inline-block">
         <section id="name" class="flex items-center h-[100dvh]">
@@ -62,14 +57,3 @@
     <img class="lg:hidden h-[15%] w-[15%] md:w-[5%] md:h-[5%]" src="../public/video/chip-unscreen.gif" alt="cip" />
   </div>
 </template>
-
-<script setup lang="ts">
-  useSeoMeta({
-    title: `Matin's Portfolio`,
-    ogTitle: `Matin's Portfolio`,
-    description: 'This is my first portfolio website that I built using Nuxt.',
-    ogDescription: 'This is my first portfolio website that I built using Nuxt.',
-    // ogImage: 'https://example.com/image.png',
-    // twitterCard: 'summary_large_image',
-  });
-</script>
