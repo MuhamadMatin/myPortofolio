@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.1.0",
+    "@nuxtjs/sitemap": "^6.1.0",
     "tailwind-scrollbar-hide": "^1.1.7"
   }
 }

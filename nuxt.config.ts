@@ -2,14 +2,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'nuxt-icon'],
-  // runtimeConfig: {
-  //   public: {
-  //     supabaseApi: process.env.SUPABASE_URL,
-  //     supabaseKey: process.env.SUPABASE_KEY,
-  //   },
-  // },
-  // supabase: {
-  //   redirect:false
-  // },
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'nuxt-icon', '@nuxtjs/sitemap'],
+
+  site: {
+    url: 'https://www.muhamadmatin.my.id',
+    name: 'Muhamad Matin Portfolio',
+  },
 });
