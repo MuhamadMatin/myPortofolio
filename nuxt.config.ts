@@ -8,6 +8,6 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://www.muhamadmatin.my.id',
-    name: 'Muhamad Matin Portfolio',
+    name: 'muhamad matin',
   },
 });
