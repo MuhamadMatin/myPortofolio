@@ -4,6 +4,8 @@ export default defineNuxtConfig({
 
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'nuxt-icon', '@nuxtjs/sitemap'],
 
+  ssr: true,
+
   site: {
     url: 'https://www.muhamadmatin.my.id',
     name: 'Muhamad Matin Portfolio',
