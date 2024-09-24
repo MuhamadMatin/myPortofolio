@@ -21,7 +21,7 @@
     <!-- Open Graph Meta untuk Facebook, LinkedIn, dll. -->
     <Meta property="og:title" content="Matin's Portfolio" />
     <Meta property="og:description" content="Explore Matin's portfolio. This is the first portfolio website created using Nuxt.js, showcasing skills in web development." />
-    <Meta property="og:image" :content="`${route}/images/thumbnail.webp`" />
+    <Meta property="og:image" :content="`${route}/favicon.ico`" />
     <Meta property="og:type" content="website" />
     <Meta property="og:url" :content="route" />
 
