@@ -13,7 +13,7 @@
     <!-- Meta umum untuk SEO -->
     <meta name="title" content="Muhamad Matin Portofolio" />
     <Meta name="description" content="Explore Matin's portfolio. This is the first portfolio website created using Nuxt.js, showcasing skills in web development." />
-    <Meta name="keywords" content="matin, muhamad matin, Muhamad Matin, portofolio, Muhammad Matin, muhammad matin, portfolio matin, Matin Portfolio, Nuxt.js portfolio, web development, full stack developer, frontend, backend" />
+    <Meta name="keywords" content="matin, muhamad matin, Muhamad Matin, portofolio, Muhammad Matin, muhammad matin, Matin Portfolio, portfolio matin, Nuxt.js portfolio, web development, full stack developer, frontend, backend" />
     <Meta name="author" content="Matin" />
     <!-- Meta untuk mobile responsiveness -->
     <Meta name="viewport" content="width=device-width, initial-scale=1" />
