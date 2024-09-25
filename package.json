@@ -11,8 +11,9 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/seo": "^2.0.0-rc.21",
     "@nuxtjs/tailwindcss": "^6.9.3",
-    "nuxt": "^3.8.0",
+    "nuxt": "^3.13.2",
     "nuxt-icon": "^0.6.10",
     "vue": "^3.3.7",
     "vue-router": "^4.2.5"
@@ -21,5 +22,6 @@
     "@nuxt/image": "^1.1.0",
     "@nuxtjs/sitemap": "^6.1.0",
     "tailwind-scrollbar-hide": "^1.1.7"
-  }
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
