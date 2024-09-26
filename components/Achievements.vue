@@ -1,16 +1,3 @@
-<template>
-  <div class="mb-12" v-for="achievement in achievements" :key="achievement">
-    <h2 class="font-bold text-white">{{ achievement.name }}</h2>
-    <h3 class="my-0.5">{{ achievement.giver }}</h3>
-    <h3 class="my-0.5">{{ achievement.header }}</h3>
-    <NuxtLink class="flex justify-items-center group" :to="`${achievement.url}`" :target="`${achievement.target}`">
-      <h4 class="duration-200 group-hover:text-teal-500">Credential {{ achievement.credential }}</h4>
-      <Icon class="inline-block w-5 h-5 duration-200 group-hover:text-teal-500 group-hover:translate-x-1 group-hover:-translate-y-1" name="tabler:arrow-up-right" />
-      <!-- <NuxtImg  loading="lazy" src="../public/svg/arrow-up-right.svg" /> -->
-    </NuxtLink>
-  </div>
-</template>
-
 <script setup>
   const achievements = ref([
     {
@@ -18,16 +5,16 @@
       name: 'Full-Stack Web Development: Bikin Projek Ujian Online CBT',
       credential: 'yc9v9inbwZ',
       giver: 'BuildWithAngga',
-      url: '404',
-      target: '',
+      url: 'error',
+      target: '_self',
     },
     {
       header: 'Sep 2024',
       name: 'Laravel 11, Breeze, Spatie: Bikin Web Platform Online Course',
       credential: 'We0axe6tcu',
       giver: 'BuildWithAngga',
-      url: '404',
-      target: '',
+      url: 'error',
+      target: '_self',
     },
     {
       header: 'Jun 2024 — Jun 2027',
@@ -35,7 +22,7 @@
       credential: 'C6DXHNW',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/HDH1S8L',
-      target: 'blank',
+      target: '_blank',
     },
     {
       header: 'Jun 2024 — Jun 2027',
@@ -43,7 +30,7 @@
       credential: 'C6DXHNW',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/OLKON7Z',
-      target: 'blank',
+      target: '_blank',
     },
     {
       header: 'Jun 2024 — Jun 2027',
@@ -51,7 +38,7 @@
       credential: 'C6DXHNW',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/YAUX6CC',
-      target: 'blank',
+      target: '_blank',
     },
     {
       header: 'Jun 2024 — Jun 2027',
@@ -59,7 +46,7 @@
       credential: 'C6DXHNW',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/C6DXHNW',
-      target: 'blank',
+      target: '_blank',
     },
     {
       header: 'Jun 2024 — Jun 2027',
@@ -67,7 +54,7 @@
       credential: 'GL3453805332',
       giver: 'Gamelab Indonesia',
       url: 'https://gamelab.id/certificate/GL3453805332',
-      target: 'blank',
+      target: '_blank',
     },
     {
       header: 'Jun 2024 — Jun 2027',
@@ -75,7 +62,7 @@
       credential: 'PNFDGTU',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/PNFDGTU',
-      target: 'blank',
+      target: '_blank',
     },
     {
       header: 'Jun 2024 — Jun 2027',
@@ -83,7 +70,7 @@
       credential: '84CTEYF',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/84CTEYF',
-      target: 'blank',
+      target: '_blank',
     },
     {
       header: 'Jun 2024 — Jun 2027',
@@ -91,7 +78,7 @@
       credential: 'H2QTNAW',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/H2QTNAW',
-      target: 'blank',
+      target: '_blank',
     },
     {
       header: 'Jun 2024 — Jun 2027',
@@ -99,7 +86,7 @@
       credential: '1WENAIV',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/1WENAIV',
-      target: 'blank',
+      target: '_blank',
     },
     {
       header: 'Jun 2024 — Jun 2027',
@@ -107,7 +94,7 @@
       credential: 'PCZ3FB0',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/PCZ3FB0',
-      target: 'blank',
+      target: '_blank',
     },
     {
       header: 'Mei 2024 — Mei 2027',
@@ -115,7 +102,7 @@
       credential: 'ZWTUJWV',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/ZWTUJWV',
-      target: 'blank',
+      target: '_blank',
     },
     {
       header: 'Mei 2024 — Mei 2027',
@@ -123,7 +110,7 @@
       credential: 'B9TTI3Z',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/B9TTI3Z',
-      target: 'blank',
+      target: '_blank',
     },
     {
       header: 'April 2024 — April 2027',
@@ -131,7 +118,7 @@
       credential: 'K7OU1VU',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/K7OU1VU',
-      target: 'blank',
+      target: '_blank',
     },
     {
       header: 'April 2024 — April 2027',
@@ -139,7 +126,7 @@
       credential: 'RFTABOX',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/RFTABOX',
-      target: 'blank',
+      target: '_blank',
     },
     {
       header: 'April 2024 — April 2027',
@@ -147,7 +134,7 @@
       credential: 'KIE3AKG',
       giver: 'Codepolitan',
       url: 'https://codepolitan.com/c/KIE3AKG',
-      target: 'blank',
+      target: '_blank',
     },
     {
       header: 'March 2024 — March 2027',
@@ -163,7 +150,7 @@
       credential: 'JMZV12J5RXN9',
       giver: 'Dicoding',
       url: 'https://www.dicoding.com/certificates/JMZV12J5RXN9',
-      target: 'blank',
+      target: '_blank',
     },
     {
       header: 'August 2023 — August 2025',
@@ -171,7 +158,7 @@
       credential: '0LZ0983QNZ65',
       giver: 'Dicoding',
       url: 'https://www.dicoding.com/certificates/0LZ0983QNZ65',
-      target: 'blank',
+      target: '_blank',
     },
     {
       header: 'July 2023 — July 2025',
@@ -179,7 +166,20 @@
       credential: 'MRZMQO0O3PYQ',
       giver: 'Dicoding',
       url: 'https://www.dicoding.com/certificates/MRZMQO0O3PYQ',
-      target: 'blank',
+      target: '_blank',
     },
   ]);
 </script>
+
+<template>
+  <div class="mb-12" v-for="achievement in achievements" :key="achievement">
+    <h2 class="font-bold text-white">{{ achievement.name }}</h2>
+    <h3 class="my-0.5">{{ achievement.giver }}</h3>
+    <h3 class="my-0.5">{{ achievement.header }}</h3>
+    <NuxtLink class="flex justify-items-center group" :to="`${achievement.url}`" :target="`${achievement.target}`">
+      <h4 class="duration-200 group-hover:text-teal-500">Credential {{ achievement.credential }}</h4>
+      <Icon class="inline-block w-5 h-5 duration-200 group-hover:text-teal-500 group-hover:translate-x-1 group-hover:-translate-y-1" name="tabler:arrow-up-right" />
+      <!-- <NuxtImg  loading="lazy" src="../public/svg/arrow-up-right.svg" /> -->
+    </NuxtLink>
+  </div>
+</template>
