@@ -1,20 +1,13 @@
 <template>
   <div>
     <p class="mb-4">
-      I am a student who dreams of becoming a
-      <span class="hover:text-teal-300 duration-200 cursor-pointer">Full Stack Developer</span>, namely someone who can develop a website from start to finish by mastering the various technologies and tools needed
+      I am a fresh graduate with a strong ambition to become a <span class="duration-200 cursor-pointer hover:text-teal-300">Full Stack Developer</span> – someone capable of developing a website from start to finish by mastering the wide
+      array of technologies and tools required. In 2021, I pursued further education at a vocational school to deepen my knowledge and skills.
     </p>
     <p class="mb-4">
-      In
-      <span class="hover:text-teal-300 duration-200 cursor-pointer">2021</span>
-      I decided to continue my studies at a
-      <span class="hover:text-teal-300 duration-200 cursor-pointer">vocational school</span>. I would like to take advantage of this opportunity to
-      <span class="hover:text-teal-300 duration-200 cursor-pointer">improve my knowledge and skills</span>
-    </p>
-    <p class="mb-4">
-      My main focus is
-      <span class="hover:text-teal-300 duration-200 cursor-pointer">learning various programming languages</span>. I want to know how each programming language works, the advantages and disadvantages I also want to develop my
-      <span class="hover:text-teal-300 duration-200 cursor-pointer">abilities in solving problems, collaborating with other people and so on</span>
+      My primary focus has been
+      <span class="duration-200 cursor-pointer hover:text-teal-300"> learning various programming languages, as I strive to understand how each one works, along with their respective strengths and limitations.</span> I am also dedicated to
+      <span class="duration-200 cursor-pointer hover:text-teal-300">honing my abilities in problem-solving, collaborating effectively with others, and continually improving as I progress in my career. </span>
     </p>
   </div>
 </template>

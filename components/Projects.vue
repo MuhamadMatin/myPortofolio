@@ -26,6 +26,14 @@
 <script setup>
   const projects = ref([
     {
+      name: 'Recipe Science',
+      desk: 'I built Recipe Science, a book website, inspired by the lack of interest in reading around me. I built this website as a solution for those of you who want to enjoy books again, as well as an effort to revive interest in reading books and this project is open to anyone, I am happy to accept your input to continue developing this website and reach more readers out there.',
+      image: 'science.webp',
+      // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
+      svg: ['Laravel.svg', 'Livewire.svg', 'DBeaver.svg', 'MySQL.svg', 'TailwindCSS.svg'],
+      URL: 'https://github.com/MuhamadMatin/laravelBooks',
+    },
+    {
       name: 'Online Exam Laravel 11',
       desk: 'I built a Laravel 11 online exam which comes from Build With Angga or BWA. However, I am currently facing a challenge as I need additional funds to host and fully deploy this Laravel project.',
       image: 'exam.webp',
