@@ -1,4 +1,8 @@
 <script setup>
+  definePageMeta({
+    layout: 'custom',
+  });
+
   const projects = ref([
     {
       name: 'Recipe Science',
@@ -30,7 +34,7 @@
       image: 'image-remake.webp',
       // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
       svg: ['Nuxt.svg', 'TailwindCSS.svg'],
-      URL: 'https://imagenuxt.netlify.app',
+      URL: 'https://imagenuxt.netlify.app/',
     },
     {
       name: 'Nuxt Blog',
@@ -38,22 +42,70 @@
       image: 'blog.webp',
       // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
       svg: ['Nuxt.svg', 'TailwindCSS.svg'],
-      URL: 'https://blogwithnuxt.netlify.app',
+      URL: 'https://blogwithnuxt.netlify.app/',
+    },
+    {
+      name: 'Nuxt Weather',
+      desk: 'I created a simple weather website I created using framwrok Nuxt.',
+      image: 'weather.webp',
+      // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
+      svg: ['Nuxt.svg', 'TailwindCSS.svg'],
+      URL: 'https://weathernwithuxt.netlify.app/',
+    },
+    {
+      name: 'Typing Game',
+      desk: 'I created typing game, this game is designed to hone your finger skills and speed in an interactive way.',
+      image: 'typing.webp',
+      // svg: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'logos:javascript'],
+      svg: ['HTML.svg', 'CSS.svg', 'JavaScript.svg'],
+      URL: 'https://muhamadmatin.github.io/TypingText/',
+    },
+    {
+      name: 'Image Search With Unsplash API',
+      desk: 'I created a website that displays various interesting photos from the Unsplash API. I used documentation provided by various sources to learn how to access and process data from the API.',
+      image: 'image.webp',
+      // svg: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'logos:javascript'],
+      svg: ['HTML.svg', 'CSS.svg', 'JavaScript.svg'],
+      URL: 'https://muhamadmatin.github.io/ImageSearch/',
+    },
+    {
+      name: 'Color Generate',
+      desk: 'I created a color generator for inspiration and creativity and makes the color selection process easier for you.',
+      image: 'color.webp',
+      // svg: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'logos:javascript'],
+      svg: ['HTML.svg', 'CSS.svg', 'JavaScript.svg'],
+      URL: 'https://muhamadmatin.github.io/colorGenerate/',
+    },
+    {
+      name: 'Code Editor',
+      desk: 'I created a simple code editor website that can be used by anyone and anywhere.',
+      image: 'code.webp',
+      // svg: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'logos:javascript'],
+      svg: ['HTML.svg', 'CSS.svg', 'JavaScript.svg'],
+      URL: 'https://muhamadmatin.github.io/CodeEditor/',
+    },
+    {
+      name: 'QR Generate',
+      desk: 'I created a website that can generate QR codes from text and URLs using the API from https://goqr.me/api/. I leveraged the documentation available on the website to understand how to send requests and receive responses from the API.',
+      image: 'qr.webp',
+      // svg: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'logos:javascript'],
+      svg: ['HTML.svg', 'CSS.svg', 'JavaScript.svg'],
+      URL: 'https://muhamadmatin.github.io/GenerateQR/',
     },
   ]);
 </script>
 
 <template>
-  <div class="space-y-12">
+  <NuxtLayout :name="custom">
     <div v-for="project in projects" :key="project">
-      <NuxtImg class="w-full h-full rounded-md" loading="lazy" :src="`/images/${project.image}`" alt="image project" />
+      <NuxtImg class="w-full bg-cover rounded-md lg:h-64" loading="lazy" :src="`/images/${project.image}`" alt="image project" />
       <div>
         <NuxtLink class="flex items-center mt-2 md:mt-2.5 space-x-2 w-fit group" :to="`${project.URL}`" target="blank">
-          <h1 class="text-xl font-semibold text-white transition-all duration-200 md:text-2xl group-hover:text-teal-300">
+          <h1 class="text-xl font-semibold text-white transition-all duration-200 group-hover:text-teal-300">
             {{ project.name }}
           </h1>
           <span class="inline-block duration-100 group-hover:-translate-y-2 group-hover:translate-x-1">
-            <img loading="lazy" class="w-6 h-6" :src="`/svg/rocket.svg`" alt="rocket svg" />
+            <img loading="lazy" class="block w-6 h-6" :src="`/svg/rocket.svg`" alt="rocket svg" />
           </span>
         </NuxtLink>
         <p class="text-sm md:text-base">
@@ -67,9 +119,5 @@
         </div>
       </div>
     </div>
-  </div>
-  <NuxtLink class="flex flex-row items-center px-4 py-2 mx-auto my-5 space-x-2 text-sm font-medium duration-100 bg-gray-900 rounded-full cursor-pointer gap-x-1 md:py-3 md:px-6 hover:text-white hover:bg-gray-800 group w-fit" to="/projects">
-    Let's see all my projects
-    <Icon class="inline-block w-6 h-6 duration-200 rotate-45 group-hover:text-teal-500 group-hover:translate-x-2" name="tabler:arrow-up-right" />
-  </NuxtLink>
+  </NuxtLayout>
 </template>

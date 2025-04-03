@@ -1,3 +1,13 @@
+<script setup>
+  const supabase = useSupabaseClient();
+  const email = ref('');
+  const comment = ref('');
+  async function tes() {
+    const { data, error } = await supabase.from('contacts').insert({ email: email.value, message: comment.value });
+    error ? alert('error') : alert('berhasil');
+  }
+</script>
+
 <template>
   <form class="w-full mx-auto">
     <!-- <label for="email-address-icon" class="block my-2 text-sm font-medium text-white">Your Email</label> -->
@@ -19,13 +29,3 @@
     </div>
   </form>
 </template>
-
-<script setup>
-  const supabase = useSupabaseClient();
-  const email = ref('');
-  const comment = ref('');
-  async function tes() {
-    const { data, error } = await supabase.from('contacts').insert({ email: email.value, message: comment.value });
-    error ? alert('error') : alert('berhasil');
-  }
-</script>

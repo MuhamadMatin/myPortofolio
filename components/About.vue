@@ -1,7 +1,7 @@
 <template>
   <div>
     <p class="mb-4">
-      I am a fresh graduate with a strong ambition to become a <span class="duration-200 cursor-pointer hover:text-teal-300">Full Stack Developer</span> – someone capable of developing a website from start to finish by mastering the wide
+      I am a fresh graduate with a strong ambition to become a <span class="duration-200 cursor-pointer hover:text-teal-300">Full Stack Developer</span> - someone capable of developing a website from start to finish by mastering the wide
       array of technologies and tools required. In 2021, I pursued further education at a vocational school to deepen my knowledge and skills.
     </p>
     <p class="mb-4">

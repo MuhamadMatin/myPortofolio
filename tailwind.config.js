@@ -3,16 +3,14 @@ export default {
   content: [],
   theme: {
     fontFamily: {
-      'helvetica': 'Helvetica, Arial, sans-serif',
+      helvetica: 'Helvetica, Arial, sans-serif',
     },
     extend: {
       colors: {
-        'text': '#B4B4B7',
-        'input': '#d4d4d9',
+        text: '#B4B4B7',
+        input: '#d4d4d9',
       },
-    }
+    },
   },
-  plugins: [
-    require('tailwind-scrollbar-hide'),
-  ],
+  plugins: [require('tailwind-scrollbar-hide')],
 };
