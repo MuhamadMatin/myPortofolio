@@ -46,7 +46,7 @@
 <template>
   <div class="space-y-12">
     <div v-for="project in projects" :key="project">
-      <NuxtImg class="w-full h-full rounded-md" loading="lazy" :src="`/images/${project.image}`" alt="image project" />
+      <NuxtImg class="w-full h-full rounded-md" loading="lazy" :src="`/images/projects/${project.image}`" alt="image project" />
       <div>
         <NuxtLink class="flex items-center mt-2 md:mt-2.5 space-x-2 w-fit group" :to="`${project.URL}`" target="blank">
           <h1 class="text-xl font-semibold text-white transition-all duration-200 md:text-2xl group-hover:text-teal-300">
@@ -69,7 +69,7 @@
     </div>
   </div>
   <NuxtLink class="flex flex-row items-center px-4 py-2 mx-auto my-5 space-x-2 text-sm font-medium duration-100 bg-gray-900 rounded-full cursor-pointer gap-x-1 md:py-3 md:px-6 hover:text-white hover:bg-gray-800 group w-fit" to="/projects">
-    Let's see all my projects
+    Let's see my projects
     <Icon class="inline-block w-6 h-6 duration-200 rotate-45 group-hover:text-teal-500 group-hover:translate-x-2" name="tabler:arrow-up-right" />
   </NuxtLink>
 </template>

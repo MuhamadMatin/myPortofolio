@@ -59,7 +59,7 @@
   <NuxtLink
     class="flex flex-row items-center px-4 py-2 mx-auto mt-5 space-x-2 text-sm font-medium duration-100 bg-gray-900 rounded-full cursor-pointer gap-x-1 md:py-3 md:px-6 hover:text-white hover:bg-gray-800 group w-fit"
     to="/achievements">
-    Let's see all my achievement
+    Let's see my achievements
     <Icon class="inline-block w-6 h-6 duration-200 rotate-45 group-hover:text-teal-500 group-hover:translate-x-2" name="tabler:arrow-up-right" />
   </NuxtLink>
 </template>

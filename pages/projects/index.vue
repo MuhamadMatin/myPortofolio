@@ -98,7 +98,7 @@
 <template>
   <NuxtLayout :name="custom">
     <div v-for="project in projects" :key="project">
-      <NuxtImg class="w-full bg-cover rounded-md lg:h-64" loading="lazy" :src="`/images/${project.image}`" alt="image project" />
+      <NuxtImg class="w-full bg-cover rounded-md lg:h-64" loading="lazy" :src="`/images/projects/${project.image}`" alt="image project" />
       <div>
         <NuxtLink class="flex items-center mt-2 md:mt-2.5 space-x-2 w-fit group" :to="`${project.URL}`" target="blank">
           <h1 class="text-xl font-semibold text-white transition-all duration-200 group-hover:text-teal-300">
@@ -118,6 +118,14 @@
           </span>
         </div>
       </div>
+    </div>
+    <div class="md:grid md:col-span-2 place-items-center">
+      <NuxtLink
+        class="flex justify-center px-12 py-2 mb-5 space-x-2 text-sm font-medium align-middle duration-100 bg-gray-900 rounded-full cursor-pointer justify-items-center group lg:px-15 lg:py-4 hover:text-white hover:bg-gray-800 w-fit lg:text-base gap-x-1"
+        to="/">
+        <Icon class="inline-block w-5 h-5 duration-100 group-hover:text-teal-500 group-hover:-translate-x-2" name="pajamas:go-back" />
+        All finish, let's back
+      </NuxtLink>
     </div>
   </NuxtLayout>
 </template>
