@@ -208,20 +208,27 @@
 <template>
   <NuxtLayout :name="custom">
     <div class="mb-12" v-for="achievement in achievements" :key="achievement">
-      <NuxtImg class="w-full bg-cover rounded-md" loading="lazy" :src="`/images/achivments/${achievement.image}`" alt="image project" />
-      <h1 class="mt-2 font-bold text-white">{{ achievement.name }}</h1>
-      <h2 class="my-0.5">{{ achievement.giver }}, {{ achievement.header }}</h2>
+      <NuxtImg :src="`/images/achivments/${achievement.image}`" alt="achievement image" :custom="true" v-slot="{ src, isLoaded, imgAttrs }">
+        <img v-if="isLoaded" v-bind="imgAttrs" :src="src" class="object-cover w-full bg-cover rounded-md md:h-48 lg:h-80" loading="lazy" />
+
+        <div v-else class="w-full h-52 md:h-48 lg:h-80 rounded-md animate-pulse bg-[hsl(200,20%,70%)]" />
+      </NuxtImg>
+
+      <h1 class="mt-2 text-lg font-bold text-white">{{ achievement.name }}</h1>
+      <h2 class="my-0.5 text-sm md:text-base">{{ achievement.giver }} || {{ achievement.header }}</h2>
+
       <NuxtLink class="flex justify-items-center group" :to="`${achievement.url}`" :target="`${achievement.target}`">
-        <h4 class="duration-200 group-hover:text-teal-500">Credential {{ achievement.credential }}</h4>
+        <h4 class="text-sm duration-200 md:text-base group-hover:text-teal-500">Credential {{ achievement.credential }}</h4>
         <Icon class="inline-block w-5 h-5 duration-200 group-hover:text-teal-500 group-hover:translate-x-1 group-hover:-translate-y-1" name="tabler:arrow-up-right" />
-        <!-- <NuxtImg  loading="lazy" src="../public/svg/arrow-up-right.svg" /> -->
       </NuxtLink>
     </div>
+
     <div class="md:grid md:col-span-2 place-items-center">
       <NuxtLink
-        class="flex justify-center px-12 py-2 mb-5 space-x-2 text-sm font-medium align-middle duration-100 bg-gray-900 rounded-full cursor-pointer justify-items-center group lg:px-15 lg:py-4 hover:text-white hover:bg-gray-800 w-fit lg:text-base gap-x-1"
+        class="flex items-center justify-center px-12 py-2 mb-5 space-x-2 text-sm font-medium align-middle duration-100 bg-gray-900 rounded-full cursor-pointer justify-items-center group lg:px-15 lg:py-4 hover:text-white hover:bg-gray-800 w-fit lg:text-base gap-x-1"
         to="/projects">
-        Achievement done, Let's see to my all projects
+        Achievements finish <br />
+        Let's see my projects
         <Icon class="inline-block w-6 h-6 duration-200 rotate-45 group-hover:text-teal-500 group-hover:translate-x-2" name="tabler:arrow-up-right" />
       </NuxtLink>
     </div>

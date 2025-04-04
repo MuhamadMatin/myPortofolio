@@ -47,8 +47,7 @@
   <div class="space-y-12">
     <div v-for="achievement in achievements" :key="achievement">
       <h2 class="font-bold text-white">{{ achievement.name }}</h2>
-      <h3 class="my-0.5">{{ achievement.giver }}</h3>
-      <h3 class="my-0.5">{{ achievement.header }}</h3>
+      <h3 class="my-0.5">{{ achievement.giver }} || {{ achievement.header }}</h3>
       <NuxtLink class="flex justify-items-center group" :to="`${achievement.url}`" :target="`${achievement.target}`">
         <h4 class="duration-200 group-hover:text-teal-500">Credential {{ achievement.credential }}</h4>
         <Icon class="inline-block w-5 h-5 duration-200 group-hover:text-teal-500 group-hover:translate-x-1 group-hover:-translate-y-1" name="tabler:arrow-up-right" />

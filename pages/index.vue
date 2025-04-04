@@ -32,7 +32,6 @@
       </section>
       <!-- <footer /> -->
       <!-- addition -->
-      <!-- <Touch /> -->
       <Additional />
       <!-- chip around -->
       <img class="hidden lg:block h-[7%] w-[7%]" src="/video/chip-unscreen.gif" alt="cip" />

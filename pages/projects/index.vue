@@ -98,7 +98,11 @@
 <template>
   <NuxtLayout :name="custom">
     <div v-for="project in projects" :key="project">
-      <NuxtImg class="w-full bg-cover rounded-md lg:h-64" loading="lazy" :src="`/images/projects/${project.image}`" alt="image project" />
+      <NuxtImg :src="`/images/projects/${project.image}`" alt="achievement image" :custom="true" v-slot="{ src, isLoaded, imgAttrs }">
+        <img v-if="isLoaded" v-bind="imgAttrs" :src="src" class="object-cover w-full bg-cover rounded-md md:h-48 lg:h-80" loading="lazy" />
+
+        <div v-else class="w-full h-52 md:h-48 lg:h-80 rounded-md animate-pulse bg-[hsl(200,20%,70%)]" />
+      </NuxtImg>
       <div>
         <NuxtLink class="flex items-center mt-2 md:mt-2.5 space-x-2 w-fit group" :to="`${project.URL}`" target="blank">
           <h1 class="text-xl font-semibold text-white transition-all duration-200 group-hover:text-teal-300">
