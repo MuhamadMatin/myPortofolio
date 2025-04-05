@@ -8,7 +8,7 @@
     <div class="lg:overflow-auto scrollbar-hide">
       <!-- about -->
       <section id="about" class="my-24">
-        <h1 class="sticky top-0 inline-block w-full py-4 mb-2 text-3xl font-semibold text-white backdrop-blur-sm md:text-4xl">About Me</h1>
+        <h1 class="sticky top-0 inline-block w-full py-4 mb-2 text-3xl font-semibold text-white backdrop-blur-sm md:text-4xl">Hi all👋</h1>
         <About />
       </section>
       <!-- experience -->
@@ -27,7 +27,7 @@
       </section>
       <!-- project -->
       <section id="projects" class="my-24">
-        <h1 class="sticky top-0 z-10 inline-block w-full py-4 mb-2 text-3xl font-semibold text-white backdrop-blur-sm md:text-4xl">Projects</h1>
+        <h1 class="sticky top-0 z-10 inline-block w-full py-4 mb-2 text-3xl font-semibold text-white backdrop-blur-sm md:text-4xl">Project</h1>
         <Projects />
       </section>
       <!-- <footer /> -->

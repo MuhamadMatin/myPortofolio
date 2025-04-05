@@ -25,7 +25,7 @@
   <div>
     <h1 class="text-4xl font-bold tracking-tight text-white">Muhamad Matin Anugrah Pujayanto</h1>
     <blockquote class="px-4 py-2.5 my-4 border-s-4 border-[#fff] max-w-sm lg:max-w-md">
-      <h2 class="italic leading-relaxe">"Learning and striving to <span class="duration-200 cursor-pointer hover:text-teal-300"> Become A Better Full Stack Web Developer</span>, even if it's just one piece of code."</h2>
+      <h2 class="italic leading-relaxe">"Learning and striving to <span class="duration-200 cursor-pointer hover:text-teal-300"> Become A Better Full-Stack Web Developer</span>, even if it's just one piece of code."</h2>
     </blockquote>
     <div class="flex flex-col">
       <p class="text-sm">let's connect with me 🤝</p>
