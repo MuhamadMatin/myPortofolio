@@ -209,9 +209,9 @@
   <NuxtLayout :name="custom">
     <div class="mb-12" v-for="achievement in achievements" :key="achievement">
       <NuxtImg :src="`/images/achivments/${achievement.image}`" alt="achievement image" :custom="true" v-slot="{ src, isLoaded, imgAttrs }">
-        <img v-if="isLoaded" v-bind="imgAttrs" :src="src" class="object-cover w-full bg-cover rounded-md md:h-48 lg:h-80" loading="lazy" />
+        <img v-if="isLoaded" v-bind="imgAttrs" :src="src" class="w-full rounded-md" loading="lazy" />
 
-        <div v-else class="w-full h-52 md:h-48 lg:h-80 rounded-md animate-pulse bg-[hsl(200,20%,70%)]" />
+        <div v-else class="w-full h-56 md:h-64 lg:h-80 rounded-md animate-pulse bg-[hsl(200,20%,70%)]" />
       </NuxtImg>
 
       <h1 class="mt-2 text-lg font-bold text-white">{{ achievement.name }}</h1>
