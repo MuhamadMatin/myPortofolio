@@ -5,6 +5,42 @@
 
   const achievements = ref([
     {
+      header: 'Okt 2024 — Okt 2027',
+      name: 'Memulai Pemrograman dengan Python',
+      credential: '1RXY26K5MXVM',
+      giver: 'Dicoding',
+      image: 'phyton.webp',
+      url: 'https://www.dicoding.com/certificates/1RXY26K5MXVM',
+      target: '_blank',
+    },
+    {
+      header: 'Okt 2024',
+      name: 'Problem Solving (Basic)',
+      credential: '1ED5CE727AFE',
+      giver: 'HackerRank',
+      image: 'problem_solving.webp',
+      url: 'https://www.hackerrank.com/certificates/iframe/1ed5ce727afe',
+      target: '_blank',
+    },
+    {
+      header: 'Sep 2024 — Sep 2027',
+      name: 'Belajar Dasar Data Science',
+      credential: 'GRX54N7K3P0M',
+      giver: 'Dicoding',
+      image: 'data_science.webp',
+      url: 'https://www.dicoding.com/certificates/4EXG7E7EEPRL',
+      target: '_blank',
+    },
+    {
+      header: 'Sep 2024 — Sep 2027',
+      name: 'Belajar Dasar Structured Query Language (SQL)',
+      credential: 'GRX54N7K3P0M',
+      giver: 'Dicoding',
+      image: 'sql.webp',
+      url: 'https://www.dicoding.com/certificates/GRX54N7K3P0M',
+      target: '_blank',
+    },
+    {
       header: 'Sep 2024',
       name: 'Full-Stack Web Development: Bikin Projek Ujian Online CBT',
       credential: 'yc9v9inbwZ',
