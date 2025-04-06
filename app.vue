@@ -29,7 +29,7 @@
     <Meta name="twitter:card" content="summary_large_image" />
     <Meta name="twitter:title" content="Matin's Portfolio" />
     <Meta name="twitter:description" content="Explore Matin's portfolio. This is the first portfolio website created using Nuxt.js, showcasing skills in web development." />
-    <Meta name="twitter:image" :content="`${route}/images/thumbnail.webp`" />
+    <Meta name="twitter:image" :content="`${route}/images/meta/thumbnail2.webp`" />
   </Head>
   <main class="bg-black text-text font-helvetica lg:overflow-auto scrollbar-hide">
     <NuxtPage />
