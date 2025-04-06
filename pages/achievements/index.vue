@@ -263,8 +263,7 @@
       <NuxtLink
         class="flex items-center justify-center px-12 py-2 mb-5 space-x-2 text-sm font-medium align-middle duration-100 bg-gray-900 rounded-full cursor-pointer justify-items-center group lg:px-15 lg:py-4 hover:text-white hover:bg-gray-800 w-fit lg:text-base gap-x-1"
         to="/projects">
-        Achievements finish <br />
-        Let's see my projects
+        Finished? Let's see my projects
         <Icon class="inline-block w-6 h-6 duration-200 rotate-45 group-hover:text-teal-500 group-hover:translate-x-2" name="tabler:arrow-up-right" />
       </NuxtLink>
     </div>

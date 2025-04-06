@@ -144,7 +144,7 @@
         class="flex justify-center px-12 py-2 mb-5 space-x-2 text-sm font-medium align-middle duration-100 bg-gray-900 rounded-full cursor-pointer justify-items-center group lg:px-15 lg:py-4 hover:text-white hover:bg-gray-800 w-fit lg:text-base gap-x-1"
         to="/">
         <Icon class="inline-block w-5 h-5 duration-100 group-hover:text-teal-500 group-hover:-translate-x-2" name="pajamas:go-back" />
-        All finish, let's back
+        All done, let's back
       </NuxtLink>
     </div>
   </NuxtLayout>
