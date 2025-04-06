@@ -223,7 +223,7 @@
       </NuxtLink>
     </div>
 
-    <div class="md:grid md:col-span-2 place-items-center">
+    <div class="mx-auto md:grid md:col-span-2">
       <NuxtLink
         class="flex items-center justify-center px-12 py-2 mb-5 space-x-2 text-sm font-medium align-middle duration-100 bg-gray-900 rounded-full cursor-pointer justify-items-center group lg:px-15 lg:py-4 hover:text-white hover:bg-gray-800 w-fit lg:text-base gap-x-1"
         to="/projects">

@@ -10,7 +10,8 @@
       image: 'science.webp',
       // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
       svg: ['Laravel.svg', 'Livewire.svg', 'DBeaver.svg', 'MySQL.svg', 'TailwindCSS.svg'],
-      URL: 'https://github.com/MuhamadMatin/laravelBooks',
+      url: '',
+      code: 'https://github.com/MuhamadMatin/laravelBooks',
     },
     {
       name: 'Online Exam Laravel 11',
@@ -18,7 +19,8 @@
       image: 'exam.webp',
       // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
       svg: ['Laravel.svg', 'DBeaver.svg', 'MySQL.svg', 'TailwindCSS.svg'],
-      URL: 'https://github.com/MuhamadMatin/BWAexamLaravel',
+      url: '',
+      code: 'https://github.com/MuhamadMatin/BWAexamLaravel',
     },
     {
       name: 'Online Courses Laravel 11',
@@ -26,7 +28,8 @@
       image: 'course.webp',
       // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
       svg: ['Laravel.svg', 'DBeaver.svg', 'MySQL.svg', 'TailwindCSS.svg'],
-      URL: 'https://github.com/MuhamadMatin/BWAcourseLaravel',
+      url: '',
+      code: 'https://github.com/MuhamadMatin/BWAcourseLaravel',
     },
     {
       name: 'Remake Image Search',
@@ -34,7 +37,8 @@
       image: 'image-remake.webp',
       // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
       svg: ['Nuxt.svg', 'TailwindCSS.svg'],
-      URL: 'https://imagenuxt.netlify.app/',
+      url: 'https://imagenuxt.netlify.app',
+      code: 'https://github.com/MuhamadMatin/imageNuxt',
     },
     {
       name: 'Nuxt Blog',
@@ -42,7 +46,8 @@
       image: 'blog.webp',
       // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
       svg: ['Nuxt.svg', 'TailwindCSS.svg'],
-      URL: 'https://blogwithnuxt.netlify.app/',
+      url: 'https://blogwithnuxt.netlify.app',
+      code: 'https://github.com/MuhamadMatin/learnNuxtBlog',
     },
     {
       name: 'Nuxt Weather',
@@ -50,7 +55,8 @@
       image: 'weather.webp',
       // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
       svg: ['Nuxt.svg', 'TailwindCSS.svg'],
-      URL: 'https://weathernwithuxt.netlify.app/',
+      url: 'https://weathernwithuxt.netlify.app',
+      code: 'https://github.com/MuhamadMatin/weatherNuxt',
     },
     {
       name: 'Typing Game',
@@ -58,7 +64,8 @@
       image: 'typing.webp',
       // svg: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'logos:javascript'],
       svg: ['HTML.svg', 'CSS.svg', 'JavaScript.svg'],
-      URL: 'https://muhamadmatin.github.io/TypingText/',
+      url: 'https://muhamadmatin.github.io/TypingText',
+      code: 'https://github.com/MuhamadMatin/TypingText',
     },
     {
       name: 'Image Search With Unsplash API',
@@ -66,7 +73,8 @@
       image: 'image.webp',
       // svg: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'logos:javascript'],
       svg: ['HTML.svg', 'CSS.svg', 'JavaScript.svg'],
-      URL: 'https://muhamadmatin.github.io/ImageSearch/',
+      url: 'https://muhamadmatin.github.io/ImageSearch',
+      code: 'https://github.com/MuhamadMatin/ImageSearch',
     },
     {
       name: 'Color Generate',
@@ -74,7 +82,8 @@
       image: 'color.webp',
       // svg: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'logos:javascript'],
       svg: ['HTML.svg', 'CSS.svg', 'JavaScript.svg'],
-      URL: 'https://muhamadmatin.github.io/colorGenerate/',
+      url: 'https://muhamadmatin.github.io/colorGenerate',
+      code: 'https://github.com/MuhamadMatin/colorGenerate',
     },
     {
       name: 'Code Editor',
@@ -82,7 +91,8 @@
       image: 'code.webp',
       // svg: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'logos:javascript'],
       svg: ['HTML.svg', 'CSS.svg', 'JavaScript.svg'],
-      URL: 'https://muhamadmatin.github.io/CodeEditor/',
+      url: 'https://muhamadmatin.github.io/CodeEditor',
+      code: 'https://github.com/MuhamadMatin/CodeEditor',
     },
     {
       name: 'QR Generate',
@@ -90,7 +100,8 @@
       image: 'qr.webp',
       // svg: ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'logos:javascript'],
       svg: ['HTML.svg', 'CSS.svg', 'JavaScript.svg'],
-      URL: 'https://muhamadmatin.github.io/GenerateQR/',
+      url: 'https://muhamadmatin.github.io/GenerateQR',
+      code: 'https://github.com/MuhamadMatin/GenerateQR',
     },
   ]);
 </script>
@@ -104,14 +115,19 @@
         <div v-else class="w-full h-48 md:h-52 lg:h-64 rounded-md animate-pulse bg-[hsl(200,20%,70%)]" />
       </NuxtImg>
       <div>
-        <NuxtLink class="flex items-center mt-2 md:mt-2.5 space-x-2 w-fit group" :to="`${project.URL}`" target="blank">
-          <h1 class="text-xl font-semibold text-white transition-all duration-200 group-hover:text-teal-300">
+        <div class="flex justify-between mt-2">
+          <h1 class="text-xl font-semibold text-white transition-all duration-200 cursor-pointer hover:text-teal-300">
             {{ project.name }}
           </h1>
-          <span class="inline-block duration-100 group-hover:-translate-y-2 group-hover:translate-x-1">
-            <img loading="lazy" class="block w-6 h-6" :src="`/svg/rocket.svg`" alt="rocket svg" />
+          <span class="flex gap-x-2 ms-3">
+            <NuxtLink v-if="project.url" class="group" :to="`${project.url}`" target="blank">
+              <Icon class="inline-block w-6 h-6 duration-100 group-hover:text-white" name="hugeicons:internet" />
+            </NuxtLink>
+            <NuxtLink v-if="project.code" class="group" :to="`${project.code}`" target="blank">
+              <Icon class="inline-block w-6 h-6 duration-100 group-hover:text-white" name="mdi:github" />
+            </NuxtLink>
           </span>
-        </NuxtLink>
+        </div>
         <p class="text-sm md:text-base">
           {{ project.desk }}
         </p>
@@ -123,7 +139,7 @@
         </div>
       </div>
     </div>
-    <div class="md:grid md:col-span-2 place-items-center">
+    <div class="mx-auto md:grid md:col-span-2">
       <NuxtLink
         class="flex justify-center px-12 py-2 mb-5 space-x-2 text-sm font-medium align-middle duration-100 bg-gray-900 rounded-full cursor-pointer justify-items-center group lg:px-15 lg:py-4 hover:text-white hover:bg-gray-800 w-fit lg:text-base gap-x-1"
         to="/">

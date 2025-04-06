@@ -6,7 +6,8 @@
       image: 'science.webp',
       // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
       svg: ['Laravel.svg', 'Livewire.svg', 'DBeaver.svg', 'MySQL.svg', 'TailwindCSS.svg'],
-      URL: 'https://github.com/MuhamadMatin/laravelBooks',
+      url: '',
+      code: 'https://github.com/MuhamadMatin/laravelBooks',
     },
     {
       name: 'Online Exam Laravel 11',
@@ -14,7 +15,8 @@
       image: 'exam.webp',
       // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
       svg: ['Laravel.svg', 'DBeaver.svg', 'MySQL.svg', 'TailwindCSS.svg'],
-      URL: 'https://github.com/MuhamadMatin/BWAexamLaravel',
+      url: '',
+      code: 'https://github.com/MuhamadMatin/BWAexamLaravel',
     },
     {
       name: 'Online Courses Laravel 11',
@@ -22,7 +24,8 @@
       image: 'course.webp',
       // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
       svg: ['Laravel.svg', 'DBeaver.svg', 'MySQL.svg', 'TailwindCSS.svg'],
-      URL: 'https://github.com/MuhamadMatin/BWAcourseLaravel',
+      url: '',
+      code: 'https://github.com/MuhamadMatin/BWAcourseLaravel',
     },
     {
       name: 'Remake Image Search',
@@ -30,7 +33,8 @@
       image: 'image-remake.webp',
       // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
       svg: ['Nuxt.svg', 'TailwindCSS.svg'],
-      URL: 'https://imagenuxt.netlify.app',
+      url: 'https://imagenuxt.netlify.app',
+      code: 'https://github.com/MuhamadMatin/imageNuxt',
     },
     {
       name: 'Nuxt Blog',
@@ -38,7 +42,8 @@
       image: 'blog.webp',
       // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
       svg: ['Nuxt.svg', 'TailwindCSS.svg'],
-      URL: 'https://blogwithnuxt.netlify.app',
+      url: 'https://blogwithnuxt.netlify.app',
+      code: 'https://github.com/MuhamadMatin/learnNuxtBlog',
     },
   ]);
 </script>
@@ -52,14 +57,19 @@
         <div v-else class="w-full h-48 md:h-52 lg:h-64 rounded-md animate-pulse bg-[hsl(200,20%,70%)]" />
       </NuxtImg>
       <div>
-        <NuxtLink class="flex items-center mt-2 md:mt-2.5 space-x-2 w-fit group" :to="`${project.URL}`" target="blank">
-          <h1 class="text-xl font-semibold text-white transition-all duration-200 md:text-2xl group-hover:text-teal-300">
+        <div class="flex justify-between mt-2">
+          <h1 class="text-xl font-semibold text-white transition-all duration-200 cursor-pointer hover:text-teal-300">
             {{ project.name }}
           </h1>
-          <span class="inline-block duration-100 group-hover:-translate-y-2 group-hover:translate-x-1">
-            <img loading="lazy" class="w-6 h-6" :src="`/svg/rocket.svg`" alt="rocket svg" />
+          <span class="flex gap-x-2 ms-3">
+            <NuxtLink v-if="project.url" class="group" :to="`${project.url}`" target="blank">
+              <Icon class="inline-block w-6 h-6 duration-100 group-hover:text-white" name="hugeicons:internet" />
+            </NuxtLink>
+            <NuxtLink v-if="project.code" class="group" :to="`${project.code}`" target="blank">
+              <Icon class="inline-block w-6 h-6 duration-100 group-hover:text-white" name="mdi:github" />
+            </NuxtLink>
           </span>
-        </NuxtLink>
+        </div>
         <p class="text-sm md:text-base">
           {{ project.desk }}
         </p>
