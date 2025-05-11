@@ -1,7 +1,7 @@
 <script setup>
   const experiences = ref([
     {
-      since: 'Nov 2024 — Present',
+      since: 'Nov 2024 — Apr 2025',
       position: 'Internship Web Developer',
       place: 'PT Digital Solusi Master',
       content: 'Digital Solusi Master is an IT company. With a team of the best individuals in their fields who help IT decision makers, project managers, and product owners to improve the use of technology.',
