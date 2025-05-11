@@ -5,6 +5,15 @@
 
   const projects = ref([
     {
+      name: 'Diservisin',
+      desk: 'A collaborative project between me and several friends aims to make digitalization of mobile phone counter inventory function as a replacement for manual service input recording into an inventory recording website, the website is designed to be used by 3 counters and will continue to grow to 17+ mobile phone counters.',
+      image: 'private.webp',
+      // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
+      svg: ['Laravel.svg', 'Jquery.svg', 'DBeaver.svg', 'MySQL.svg', 'TailwindCSS.svg'],
+      url: '',
+      code: '',
+    },
+    {
       name: 'Recipe Science',
       desk: 'I built Recipe Science, a book website, inspired by the lack of interest in reading around me. I built this website as a solution for those of you who want to enjoy books again, as well as an effort to revive interest in reading books and this project is open to anyone, I am happy to accept your input to continue developing this website and reach more readers out there.',
       image: 'science.webp',
@@ -107,7 +116,7 @@
 </script>
 
 <template>
-  <NuxtLayout :name="custom">
+  <NuxtLayout name="custom">
     <div v-for="project in projects" :key="project">
       <NuxtImg :src="`/images/projects/${project.image}`" alt="achievement image" :custom="true" v-slot="{ src, isLoaded, imgAttrs }">
         <img v-if="isLoaded" v-bind="imgAttrs" :src="src" class="w-full rounded-md" loading="lazy" />

@@ -45,15 +45,6 @@
       url: 'https://imagenuxt.netlify.app',
       code: 'https://github.com/MuhamadMatin/imageNuxt',
     },
-    {
-      name: 'Nuxt Blog',
-      desk: 'I created a blog using the Nuxt Content from Nuxt.js as a means to learn the Nuxt module. The nuxt content is one of many modules available in Nuxt.js, a framework based on Vue.js. I can write my blog content using .md, .yml, .csv or .json. By creating this blog, I can improve my knowledge and skills about Nuxt.js and its modules.',
-      image: 'blog.webp',
-      // svg: ['logos:nuxt-icon', 'logos:tailwindcss-icon'],
-      svg: ['Nuxt.svg', 'TailwindCSS.svg'],
-      url: 'https://blogwithnuxt.netlify.app',
-      code: 'https://github.com/MuhamadMatin/learnNuxtBlog',
-    },
   ]);
 </script>
 
