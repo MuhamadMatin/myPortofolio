@@ -18,6 +18,12 @@
       alt: 'linkedin',
       URL: 'https://linkedin.com/in/muhamad-matin-anugrah-pujayanto',
     },
+    {
+      svg: 'cib:upwork',
+      // svg: 'upwork.svg',
+      alt: 'upwork',
+      URL: 'https://upwork.com/freelancers/~014dfc57b2a51f79cc',
+    },
   ]);
 </script>
 
