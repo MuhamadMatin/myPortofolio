@@ -3,7 +3,7 @@
     <p class="inline-block mb-2 text-xl font-semibold duration-200 cursor-pointer hover:text-teal-300">Call me Matin</p>
     <span class="duration-200 cursor-pointer hover:text-teal-300"></span>
     <p class="mb-4">
-      A <span class="duration-200 cursor-pointer hover:text-teal-300">Software Engineering</span> graduate with a strong passion for
+      Undergraduate <span class="duration-200 cursor-pointer hover:text-teal-300">informatics student</span> at <span class="duration-200 cursor-pointer hover:text-teal-300">Telkom University Surabaya</span> with a strong passion for
       <span class="duration-200 cursor-pointer hover:text-teal-300"> learning and building meaningful websites.</span> Over the past year, I've worked as both a Front-End and Back-End developer, which has helped me become confident in using
       technologies like <span class="duration-200 cursor-pointer hover:text-teal-300"> Laravel, Livewire, VueJS, Nuxt, Tailwind CSS, and MySQL.</span>
     </p>

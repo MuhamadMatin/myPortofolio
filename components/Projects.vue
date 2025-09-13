@@ -8,6 +8,7 @@
       svg: ['Laravel.svg', 'Jquery.svg', 'DBeaver.svg', 'MySQL.svg', 'TailwindCSS.svg'],
       url: '',
       code: '',
+      status: 'Ongoing',
     },
     {
       name: 'Recipe Science',
@@ -17,6 +18,7 @@
       svg: ['Laravel.svg', 'Livewire.svg', 'DBeaver.svg', 'MySQL.svg', 'TailwindCSS.svg'],
       url: '',
       code: 'https://github.com/MuhamadMatin/laravelBooks',
+      status: 'Finished',
     },
     {
       name: 'Online Exam Laravel 11',
@@ -26,6 +28,7 @@
       svg: ['Laravel.svg', 'DBeaver.svg', 'MySQL.svg', 'TailwindCSS.svg'],
       url: '',
       code: 'https://github.com/MuhamadMatin/BWAexamLaravel',
+      status: 'Finished',
     },
     {
       name: 'Online Courses Laravel 11',
@@ -35,6 +38,7 @@
       svg: ['Laravel.svg', 'DBeaver.svg', 'MySQL.svg', 'TailwindCSS.svg'],
       url: '',
       code: 'https://github.com/MuhamadMatin/BWAcourseLaravel',
+      status: 'Finished',
     },
     {
       name: 'Remake Image Search',
@@ -44,6 +48,7 @@
       svg: ['Nuxt.svg', 'TailwindCSS.svg'],
       url: 'https://imagenuxt.netlify.app',
       code: 'https://github.com/MuhamadMatin/imageNuxt',
+      status: 'Finished',
     },
   ]);
 </script>
@@ -51,11 +56,19 @@
 <template>
   <div class="space-y-12">
     <div v-for="project in projects" :key="project">
-      <NuxtImg :src="`/images/projects/${project.image}`" alt="achievement image" :custom="true" v-slot="{ src, isLoaded, imgAttrs }">
-        <img v-if="isLoaded" v-bind="imgAttrs" :src="src" class="w-full rounded-md" loading="lazy" />
+      <span class="relative">
+        <NuxtImg :src="`/images/projects/${project.image}`" alt="achievement image" :custom="true" v-slot="{ src, isLoaded, imgAttrs }">
+          <img v-if="isLoaded" v-bind="imgAttrs" :src="src" class="w-full rounded-md" loading="lazy" />
 
-        <div v-else class="w-full h-48 md:h-52 lg:h-64 rounded-md animate-pulse bg-[hsl(200,20%,70%)]" />
-      </NuxtImg>
+          <div v-else class="w-full h-48 md:h-52 lg:h-64 rounded-md animate-pulse bg-[hsl(200,20%,70%)]" />
+        </NuxtImg>
+        <p v-if="project.status == 'Finished'" class="absolute bottom-0 left-0 px-4 py-2 text-sm font-medium duration-100 bg-gray-900 rounded-tr-lg cursor-pointer rounded-bl-md gap-x-1 md:py-2 md:px-5 hover:text-white hover:bg-gray-800">
+          {{ project.status }}
+        </p>
+        <p v-else class="absolute bottom-0 left-0 px-4 py-2 text-sm font-medium text-teal-400 duration-100 bg-gray-900 rounded-tr-lg cursor-pointer rounded-bl-md gap-x-1 md:py-2 md:px-5 hover:text-teal-300 hover:bg-gray-800">
+          {{ project.status }}
+        </p>
+      </span>
       <div>
         <div class="flex justify-between mt-2">
           <h1 class="text-xl font-semibold text-white transition-all duration-200 cursor-pointer hover:text-teal-300">
